@@ -11,7 +11,7 @@ var activeCountLimit = 100;
 
 function runrun(){
 
-    var table = docuemnt.querySelector('.ivu-table-body table');
+    var table = document.querySelector('.ivu-table-body table');
     if(!table){
         alert('未检测到数据表格，请联系...');
         return;
