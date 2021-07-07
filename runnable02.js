@@ -45,6 +45,10 @@ function runrun(){
         normalAc = active - fakeAc;
         fackPercent = Math.round((fakeAc / active) * 10000) / 100;
         fee = Math.round(price * normalAc * 100) / 100;
+        
+        if(active <= fakeAc){
+            continue;
+        }
 
         columns[activeIndex].innerText = active;
         columns[normaAclIndex].innerText = normalAc;
