@@ -44,11 +44,6 @@ function runrun(){
         active = active - Math.floor(active * activeDeductPercent);
         normalAc = active - fakeAc;
         fackPercent = Math.round((fakeAc / active) * 10000) / 100;
-        if(normalAc == 0){
-            effPercent = 0.00;
-        } else {
-            effPercent = Math.round((effActive / normalAc) * 10000) / 100;
-        }
         fee = Math.round(price * normalAc * 100) / 100;
 
         columns[activeIndex].innerText = active;
