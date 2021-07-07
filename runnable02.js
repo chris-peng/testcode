@@ -16,7 +16,7 @@ function runrun(){
     }
 
     var percents = prompt('输入扣除百分比（激活数,平均激活单价）:', '10,5');
-    if(percent == null){
+    if(percents == null){
         return;
     }
     percents = percents.split(',');
