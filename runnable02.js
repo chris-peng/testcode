@@ -2,26 +2,26 @@ var activeIndex = 4;
 var normaAclIndex = 5;
 var fakeAcIndex = 6;
 var fackPercentIndex = 7;
-var effActiveIndex = 8;
-var effPercentIndex = 9;
-var feeIndex = 10;
-var priceIndex = 11;
+var feeIndex = 8;
+var priceIndex = 9;
 
-var activeCountLimit = 100;
+var activeCountLimit = -1;
 
 function runrun(){
 
-    var table = document.querySelector('.ivu-table-body table');
+    var table = document.querySelectorAll('.ivu-table-body table')[1];
     if(!table){
         alert('未检测到数据表格，请联系...');
         return;
     }
 
-    var percent = prompt('输入扣除百分比:', '10');
+    var percents = prompt('输入扣除百分比（激活数,平均激活单价）:', '10,5');
     if(percent == null){
         return;
     }
-    percent = parseFloat(percent) / 100;
+    percents = percents.split(',');
+    var activeDeductPercent = parseFloat(percents[0]) / 100;
+    var priceDeductPercent = parseFloat(percents[1]) / 100;
 
     var rows = table.querySelectorAll('tr');
     for(var i = 0; i < rows.length; i++){
@@ -37,13 +37,11 @@ function runrun(){
         var normalAc = parseFloat(columns[normaAclIndex].innerText);
         var fakeAc = parseFloat(columns[fakeAcIndex].innerText);
         var fackPercent = parseFloat(columns[fackPercentIndex].innerText);
-        var effActive = parseFloat(columns[effActiveIndex].innerText);
-        var effPercent = parseFloat(columns[effPercentIndex].innerText);
         var fee = parseFloat(columns[feeIndex].innerText);
         var price = parseFloat(columns[priceIndex].innerText);
 
-        var realPrice = fee / normalAc;
-        active = active - Math.floor(active * percent);
+        price = Math.round((price - (price * priceDeductPercent)) * 100) / 100;
+        active = active - Math.floor(active * activeDeductPercent);
         normalAc = active - fakeAc;
         fackPercent = Math.round((fakeAc / active) * 10000) / 100;
         if(normalAc == 0){
@@ -51,12 +49,12 @@ function runrun(){
         } else {
             effPercent = Math.round((effActive / normalAc) * 10000) / 100;
         }
-        fee = Math.round(realPrice * normalAc * 100) / 100;
+        fee = Math.round(price * normalAc * 100) / 100;
 
         columns[activeIndex].innerText = active;
         columns[normaAclIndex].innerText = normalAc;
         columns[fackPercentIndex].innerText = fackPercent + '%';
-        columns[effPercentIndex].innerText = effPercent + '%';
         columns[feeIndex].innerText = fee;
+        columns[priceIndex].innerText = price;
     }
 }
