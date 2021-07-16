@@ -55,8 +55,8 @@ function runrun(){
 
         columns[activeIndex].innerText = active;
         columns[normaAclIndex].innerText = normalAc;
-        columns[fackPercentIndex].innerText = fackPercent + '%';
-        columns[effPercentIndex].innerText = effPercent + '%';
-        columns[feeIndex].innerText = fee;
+        columns[fackPercentIndex].innerText = fackPercent.toFixed(2) + '%';
+        columns[effPercentIndex].innerText = effPercent.toFixed(2) + '%';
+        columns[feeIndex].innerText = fee.toFixed(2);
     }
 }
