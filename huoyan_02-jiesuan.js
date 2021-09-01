@@ -26,7 +26,7 @@ function runrun(){
     var rows = table.querySelectorAll('tr');
     for(var i = 0; i < rows.length; i++){
         var row = rows[i];
-        var columns = row.querySelectorAll('td span');
+        var columns = row.querySelectorAll('td');
 
         var active = parseFloat(columns[activeIndex].innerText);
 
