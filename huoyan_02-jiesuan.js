@@ -9,7 +9,7 @@ var activeCountLimit = -1;
 
 function runrun(){
 
-    var table = document.querySelectorAll('.ivu-table-body table')[0];
+    var table = document.querySelectorAll('.ant-table-tbody')[0];
     if(!table){
         alert('未检测到数据表格，请联系...');
         return;
