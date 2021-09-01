@@ -47,7 +47,7 @@ function runrun(){
         columns[activeIndex].innerText = active;
         columns[normaAclIndex].innerText = normalAc;
         if(fakeAc != 0){
-            columns[fackPercentIndex].innerText = fackPercent.toFixed(2) + '%';
+            columns[fackPercentIndex].innerText = Math.round(fackPercent.toFixed(2) * 100) / 100 + '%';
         }
     }
 }
