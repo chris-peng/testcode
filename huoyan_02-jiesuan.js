@@ -52,7 +52,13 @@ function runrun(){
 
         columns[activeIndex].innerText = active;
         columns[normaAclIndex].innerText = normalAc;
-        columns[fackPercentIndex].innerText = (Math.round(fackPercent.toFixed(2)*100)/100) + '%';
+        var finalPercent = (Math.round(fackPercent.toFixed(2)*100)/100);
+        if(finalPercent == 0){
+            columns[fackPercentIndex].innerText =  '0';
+        }else {
+            columns[fackPercentIndex].innerText = finalPercent + '%';
+        }
+        
         columns[feeIndex].innerText = Math.round(fee.toFixed(2) * 100)/100;
         columns[priceIndex].innerText = Math.round(price.toFixed(2)*100)/100;
     }
