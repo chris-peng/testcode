@@ -60,7 +60,7 @@ function runrun(){
         }else {
             columns[fackPercentIndex].innerText = finalPercent + '%';
         }
-        
+        columns[fakeAcIndex].innerText = fakeAc;
         columns[feeIndex].innerText = Math.round(fee.toFixed(2) * 100)/100;
         columns[priceIndex].innerText = Math.round(price.toFixed(2)*100)/100;
     }
