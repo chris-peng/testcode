@@ -92,9 +92,21 @@ function interceptintercept(json, resp){
                 }
             }
             _overview.activeNum += row.activeNum;
+            _overview.normalNum += row.normalNum;
+            _overview.statementCost += row.statementCost;
+        }
+        if(_overview.activeNum > 0){
+          _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
+        }
+        if(_overview.normalNum > 0){
+          _overview.avgActivePrice += (_overview.statementCost / _overview.normalNum).toFixed(2);
         }
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
+        overviewValues[1].innerText = _overview.normalNum.toLocaleString();
+        overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
+        overviewValues[3].innerText = _overview.statementCost.toLocaleString();
+        overviewValues[4].innerText = _overview.avgActivePrice.toLocaleString();
         return json;
     }
 }
