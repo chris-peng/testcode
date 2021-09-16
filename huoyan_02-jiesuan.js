@@ -15,13 +15,14 @@ function runrun(){
         return;
     }
 
-    var percents = prompt('输入扣除百分比（激活数,平均激活单价）:', '10,0');
+    var percents = prompt('输入扣除百分比（激活数,平均激活单价,+作弊数）:', '10,0,0');
     if(percents == null){
         return;
     }
     percents = percents.split(',');
     var activeDeductPercent = parseFloat(percents[0]) / 100;
     var priceDeductPercent = parseFloat(percents[1]) / 100;
+    var fackAcIncPercent = parseFloat(percents[2]) / 100;
 
     var rows = table.querySelectorAll('tr');
     for(var i = 0; i < rows.length; i++){
@@ -42,6 +43,7 @@ function runrun(){
 
         price = Math.round((price - (price * priceDeductPercent)) * 100) / 100;
         active = active - Math.floor(active * activeDeductPercent);
+        fakeAc = fakeAc + Math.ceil(fakeAc * fackAcIncPercent);
         normalAc = active - fakeAc;
         fackPercent = Math.round((fakeAc / active) * 10000) / 100;
         fee = Math.round(price * normalAc * 100) / 100;
