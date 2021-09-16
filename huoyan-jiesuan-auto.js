@@ -115,6 +115,7 @@ var activeDeductPercent, priceDeductPercent, fackAcIncPercent;
 var activeCountLimit = -1;
 
 function runrun(){
+    alert('注意：不支持多页数据！');
     var percents = prompt('输入扣除百分比（激活数,平均激活单价,+作弊数）:', '10,0,0');
     if(percents == null){
         return;
