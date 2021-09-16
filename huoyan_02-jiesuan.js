@@ -41,7 +41,7 @@ function runrun(){
         var fee = parseFloat(columns[feeIndex].innerText);
         var price = parseFloat(columns[priceIndex].innerText);
 
-        price = Math.round((price - (price * priceDeductPercent)) * 100) / 100;
+        price = price - (price * priceDeductPercent);
         active = active - Math.floor(active * activeDeductPercent);
         fakeAc = fakeAc + Math.ceil(fakeAc * fackAcIncPercent);
         normalAc = active - fakeAc;
