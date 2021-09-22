@@ -120,7 +120,7 @@ function interceptintercept(json, resp){
           "normalNum": 0,
           "cheatRate": 0
         };
-        var result = json.data.statisticList;
+        var result = json.data;
         for(var i = 0; i < result.length; i++){
             var row = result[i];
 
