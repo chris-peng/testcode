@@ -66,8 +66,11 @@ function interceptintercept(json, resp){
           "normalNum": 0,
           "cheatRate": 0
         };
+      var i=1;
+      console.log(i++);
         var result = json.data.result;
         for(var i = 0; i < result.length; i++){
+          console.log(i++);
             var row = result[i];
 
             var active = row[activeIndex];
@@ -97,14 +100,18 @@ function interceptintercept(json, resp){
             }
             _overview.activeNum += row[activeIndex];
             _overview.normalNum += row[normaAclIndex];
+          console.log(i++);
         }
+      console.log('out',i++);
         if(_overview.activeNum > 0){
           _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
+      console.log('out',i++);
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
         overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
+      console.log('out',i++);
         return json;
     }
 }
