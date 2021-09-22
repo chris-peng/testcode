@@ -105,7 +105,7 @@ function interceptintercept(json, resp){
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
         overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
-        overviewValues[3].innerText = _overview.statementCost.toFixed(3).toLocaleString();
+        overviewValues[3].innerText = _overview.statementCost.toFixed(2);
         overviewValues[4].innerText = _overview.avgActivePrice.toLocaleString();
         return json;
     }
