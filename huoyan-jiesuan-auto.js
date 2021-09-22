@@ -104,9 +104,9 @@ function interceptintercept(json, resp){
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
-        overviewValues[2].innerText = _overview.cheatRate;
-        overviewValues[3].innerText = _overview.statementCost;
-        overviewValues[4].innerText = _overview.avgActivePrice;
+        overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
+        overviewValues[3].innerText = _overview.statementCost.toLocaleString();
+        overviewValues[4].innerText = _overview.avgActivePrice.toLocaleString();
         return json;
     }
 }
