@@ -60,7 +60,7 @@ function interceptintercept(json, resp){
         json.data.avgActivePrice = null;
         json.data.avgActivePricePer = null;
         return json;
-    } else if(resp.url.indexOf('/promotionData/statisticsList?') >= 0){
+    } else if(resp.url.indexOf('/predict/list?') >= 0){
         var _overview = {
           "activeNum": 0,
           "normalNum": 0,
