@@ -76,7 +76,7 @@ function interceptintercept(json, resp){
                 continue;
             }
 
-            var normalAc = columns[normaAclIndex];
+            var normalAc = row[normaAclIndex];
             var fakeAc = row[fakeAcIndex];
             var fackPercent = row[fackPercentIndex];
 
