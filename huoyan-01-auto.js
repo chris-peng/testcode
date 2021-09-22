@@ -48,80 +48,84 @@ fetch = function (url, options={}) {
 
 function interceptintercept(json, resp){
     console.log(json, resp);
-    if(resp.url.indexOf('/statement/info?')>=0) {
+    if(resp.url.indexOf('/predict/info?')>=0) {
         json.data.activeNum = null;
+        json.data.activeNumPer = null;
         json.data.normalNum = null;
+        json.data.normalNumPer = null;
         json.data.cheatRate = null;
-        json.data.statementCost = null;
+        json.data.cheatRatePer = null;
+        json.data.predictCost = null;
+        json.data.predictCostPer = null;
         json.data.avgActivePrice = null;
+        json.data.avgActivePricePer = null;
         return json;
-    } else if(resp.url.indexOf('/statement/list?') >= 0){
+    } else if(resp.url.indexOf('/promotionData/statisticsList?') >= 0){
         var _overview = {
-            "activeNum": 0,
-            "normalNum": 0,
-            "cheatRate": 0,
-            "statementCost": 0,
-            "avgActivePrice": 0
+          "activeNum": 0,
+          "normalNum": 0,
+          "cheatRate": 0
         };
         var result = json.data.result;
         for(var i = 0; i < result.length; i++){
             var row = result[i];
 
-            var active = row.activeNum;
-            var normalAc = row.normalNum;
-            var fakeAc = row.cheatNum;
-            var fackPercent = row.cheatRate;
-            var fee = row.statementCost;
-            var price = row.avgActivePrice;
+            var active = row[activeIndex];
 
-            if(active >= activeCountLimit){
-                price = price - (price * priceDeductPercent);
-                active = active - Math.floor(active * activeDeductPercent);
-                fakeAc = fakeAc + Math.ceil(fakeAc * fackAcIncPercent);
-                normalAc = active - fakeAc;
-                fackPercent = Math.round((fakeAc / active) * 10000) / 100;
-                fee = Math.round(price * normalAc * 100) / 100;
-
-                if(active > fakeAc){
-                    row.activeNum = active;
-                    row.normalNum = normalAc;
-                    row.cheatNum = fakeAc;
-                    row.cheatRate = (Math.round(fackPercent.toFixed(2)*100)/100);
-                    row.statementCost = Math.round(fee.toFixed(2) * 100)/100;
-                    row.avgActivePrice = Math.round(price.toFixed(2)*100)/100;
-                }
+            if(active < activeCountLimit){
+                continue;
             }
-            _overview.activeNum += row.activeNum;
-            _overview.normalNum += row.normalNum;
-            _overview.statementCost += row.statementCost;
+
+            var normalAc = columns[normaAclIndex];
+            var fakeAc = row[fakeAcIndex];
+            var fackPercent = row[fackPercentIndex];
+
+            active = active - Math.floor(active * activeDeductPercent);
+            normalAc = active - fakeAc;
+            if(fakeAc != 0){
+              fackPercent = Math.round((fakeAc / active) * 10000) / 100;
+            }
+
+            if(active <= fakeAc){
+                continue;
+            }
+
+            row[activeIndex] = active;
+            row[normaAclIndex] = normalAc;
+            if(fakeAc != 0){
+                row[fackPercentIndex] = Math.round(fackPercent.toFixed(2) * 100) / 100;
+            }
+            _overview.activeNum += row[activeIndex];
+            _overview.normalNum += row[normaAclIndex];
         }
         if(_overview.activeNum > 0){
           _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
-        }
-        if(_overview.normalNum > 0){
-          _overview.avgActivePrice += (_overview.statementCost / _overview.normalNum).toFixed(2);
         }
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
         overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
-        overviewValues[3].innerText = _overview.statementCost.toLocaleString();
-        overviewValues[4].innerText = _overview.avgActivePrice.toLocaleString();
         return json;
     }
 }
 
 var activeDeductPercent, priceDeductPercent, fackAcIncPercent;
-var activeCountLimit = -1;
+var activeCountLimit = 10;
+
+   
+var activeIndex = 'activationNumber';
+var normaAclIndex = 'netActivationNumber';
+var fakeAcIndex = 'cheatNumber';
+var fackPercentIndex = 'cheatPercent';
 
 function runrun(){
     alert('注意：总览区域不支持多页数据！');
-    var percents = prompt('输入扣除百分比（激活数,平均激活单价,+作弊数）:', '10,0,0');
+    var percents = prompt('输入扣除百分比:', '10');
     if(percents == null){
         return;
     }
     percents = percents.split(',');
     activeDeductPercent = parseFloat(percents[0]) / 100;
-    priceDeductPercent = parseFloat(percents[1]) / 100;
-    fackAcIncPercent = parseFloat(percents[2]) / 100;
+    //priceDeductPercent = parseFloat(percents[1]) / 100;
+    //fackAcIncPercent = parseFloat(percents[2]) / 100;
 }
