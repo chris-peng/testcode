@@ -32,7 +32,11 @@ fetch = function (url, options={}) {
                         } catch (error) {
                             resolvej.call(this,j);
                         }
-                        resolvej.call(this,JSON.stringify(interceptintercept(j, this)));
+                        try {
+                          resolvej.call(this,JSON.stringify(interceptintercept(j, this)));
+                        } catch (e){
+                          console.log(e);
+                        }
                     })
                 .catch(errj=>{rejectj(errj)})})};
                 return newRes;
