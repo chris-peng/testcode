@@ -3,7 +3,7 @@ function interceptintercept(content, resp){
     console.log(content, resp);
     if(resp.config.url.indexOf('/order/page?') >= 0){
       var json = JSON.parse(content);
-      var data = json.result.pageResult;
+      var data = json.result.pageResult.page;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
         console.log('row', row);
