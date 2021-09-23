@@ -107,7 +107,7 @@ function interceptintercept(json, resp){
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
-        overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
+        overviewValues[2].innerText = _overview.cheatRate;
         return json;
     } else if(resp.url.indexOf('/predict/list?') >= 0){
         var activeIndex = 'activeNum';
