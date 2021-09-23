@@ -104,10 +104,14 @@ function interceptintercept(json, resp){
         if(_overview.activeNum > 0){
           _overview.cheatRate = Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
-        var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
-        overviewValues[0].innerText = _overview.activeNum.toLocaleString();
-        overviewValues[1].innerText = _overview.normalNum.toLocaleString();
-        document.querySelectorAll('.ant-statistic-content-value')[2].innerHTML = '<span class="ant-statistic-content-value-int">' + (_overview.cheatRate == 0 ? '--' : _overview.cheatRate.toLocaleString()) + '</span>';
+       // var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
+        //overviewValues[0].innerText = _overview.activeNum.toLocaleString();
+        //overviewValues[1].innerText = _overview.normalNum.toLocaleString();
+        // document.querySelectorAll('.ant-statistic-content-value')[2].innerHTML = '<span class="ant-statistic-content-value-int">' + (_overview.cheatRate == 0 ? '--' : _overview.cheatRate.toLocaleString()) + '</span>';
+        json.data.totalActivationNumber = _overview.activeNum;
+        json.data.totalCheatNumber = _overview.activeNum - _overview.normalNum;
+        json.data.totalNetActivationNumber = _overview.normalNum;
+        json.data.totalCheatPercent = _overview.cheatRate;
         return json;
     } else if(resp.url.indexOf('/predict/list?') >= 0){
         var activeIndex = 'activeNum';
