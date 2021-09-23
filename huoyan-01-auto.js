@@ -86,6 +86,8 @@ function interceptintercept(json, resp){
             }
 
             if(active <= fakeAc){
+                _overview.activeNum += row[activeIndex];
+                _overview.normalNum += row[normaAclIndex];
                 continue;
             }
 
@@ -138,6 +140,9 @@ function interceptintercept(json, resp){
             }
 
             if(active <= fakeAc){
+                _overview.activeNum += row[activeIndex];
+                _overview.normalNum += row[normaAclIndex];
+                _overview.predictCost += row.predictCost;
                 continue;
             }
 
@@ -154,7 +159,7 @@ function interceptintercept(json, resp){
           _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
         if(_overview.normalNum > 0){
-          _overview.avgActivePrice += Math.round(_overview.predictCost / _overview.normalNum * 10000) / 100;
+          _overview.avgActivePrice += Math.round(_overview.predictCost / _overview.normalNum * 100) / 100;
         }
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
