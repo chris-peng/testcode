@@ -104,7 +104,10 @@ function interceptintercept(json, resp){
         if(_overview.activeNum > 0){
           _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
-        
+        var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
+        overviewValues[0].innerText = _overview.activeNum.toLocaleString();
+        overviewValues[1].innerText = _overview.normalNum.toLocaleString();
+        //overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
         return json;
     } else if(resp.url.indexOf('/predict/list?') >= 0){
         var activeIndex = 'activeNum';
