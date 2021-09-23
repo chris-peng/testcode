@@ -6,6 +6,7 @@ function interceptintercept(content, resp){
       var data = json.result.pageResult;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
+        console.log('row', row);
         if(row.column10 == '结算数据'){
           if(row.column07 == '3750'){
             row.column07 == '3688';
