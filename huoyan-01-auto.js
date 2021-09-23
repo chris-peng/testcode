@@ -102,12 +102,12 @@ function interceptintercept(json, resp){
             _overview.normalNum += row[normaAclIndex];
         }
         if(_overview.activeNum > 0){
-          _overview.cheatRate = Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
+          _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
-        overviewValues[2].innerText = _overview.cheatRate;
+        document.querySelectorAll('.ant-statistic-content-value')[2].innerText = _overview.cheatRate.toLocaleString();
         return json;
     } else if(resp.url.indexOf('/predict/list?') >= 0){
         var activeIndex = 'activeNum';
@@ -159,10 +159,10 @@ function interceptintercept(json, resp){
             _overview.predictCost += row.predictCost;
         }
         if(_overview.activeNum > 0){
-          _overview.cheatRate = Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
+          _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
         if(_overview.normalNum > 0){
-          _overview.avgActivePrice = Math.round(_overview.predictCost / _overview.normalNum * 100) / 100;
+          _overview.avgActivePrice += Math.round(_overview.predictCost / _overview.normalNum * 100) / 100;
         }
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
