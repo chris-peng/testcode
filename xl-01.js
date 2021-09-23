@@ -23,11 +23,16 @@ hookscript.src='https://unpkg.com/ajax-hook@2.0.3/dist/ajaxhook.min.js';
 document.head.appendChild(hookscript);
 
 function runrun(){
+    if(ah){
+        ah.proxy({
+          onResponse: function(response, handler){
+            response.response = interceptintercept(response.response, response);
+            handler.next(response);
+          }
+        });
+    } else {
+        alert('稍等...');
+        runrun();
+    }
     alert('OK！');
-    ah.proxy({
-      onResponse: function(response, handler){
-        response.response = interceptintercept(response.response, response);
-        handler.next(response);
-      }
-    });
 }
