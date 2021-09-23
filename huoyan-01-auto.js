@@ -151,6 +151,7 @@ function interceptintercept(json, resp){
             if(fakeAc != 0){
                 row[fackPercentIndex] = Math.round(fackPercent.toFixed(2) * 100) / 100;
             }
+            row.predictCost = row.avgActivePrice * normalAc;
             _overview.activeNum += row[activeIndex];
             _overview.normalNum += row[normaAclIndex];
             _overview.predictCost += row.predictCost;
