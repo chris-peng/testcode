@@ -50,15 +50,10 @@ function interceptintercept(json, resp){
     console.log(json, resp);
     if(resp.url.indexOf('/predict/info?')>=0) {
         json.data.activeNum = null;
-        json.data.activeNumPer = null;
         json.data.normalNum = null;
-        json.data.normalNumPer = null;
         json.data.cheatRate = null;
-        json.data.cheatRatePer = null;
         json.data.predictCost = null;
-        json.data.predictCostPer = null;
         json.data.avgActivePrice = null;
-        json.data.avgActivePricePer = null;
         return json;
     } else if(resp.url.indexOf('/promotionData/statisticsList?') >= 0){
         var activeIndex = 'activationNumber';
