@@ -161,7 +161,9 @@ function interceptintercept(json, resp){
             _overview.activeNum += row[activeIndex];
             _overview.normalNum += row[normaAclIndex];
             _overview.predictCost += row.predictCost;
+            row.predictCost = Math.round(row.predictCost * 100) / 100;
         }
+        _overview.predictCost = Math.round(_overview.predictCost * 100) / 100;
         if(_overview.activeNum > 0){
           _overview.cheatRate = Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
