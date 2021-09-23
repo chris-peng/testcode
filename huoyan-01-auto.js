@@ -107,7 +107,7 @@ function interceptintercept(json, resp){
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
-        document.querySelectorAll('.ant-statistic-content-value')[2].innerText = _overview.cheatRate.toLocaleString();
+        document.querySelectorAll('.ant-statistic-content-value')[2].innerHtml = '<span class="ant-statistic-content-value-int">' + (_overview.cheatRate == 0 ? '--' : _overview.cheatRate.toLocaleString()) + '</span>';
         return json;
     } else if(resp.url.indexOf('/predict/list?') >= 0){
         var activeIndex = 'activeNum';
