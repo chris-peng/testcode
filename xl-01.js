@@ -13,6 +13,7 @@ function interceptintercept(content, resp){
           }
         }
       }
+      console.log('json', json);
       return JSON.stringify(json);
     }
     return content;
