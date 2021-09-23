@@ -101,6 +101,9 @@ function interceptintercept(json, resp){
             _overview.activeNum += row[activeIndex];
             _overview.normalNum += row[normaAclIndex];
         }
+        if(_overview.activeNum > 0){
+          _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
+        }
         
         return json;
     } else if(resp.url.indexOf('/predict/list?') >= 0){
