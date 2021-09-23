@@ -6,13 +6,10 @@ function interceptintercept(content, resp){
       var data = json.result.pageResult.page;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
-        console.log('row', row);
         if(row.column10 == '结算数据'){
-            console.log('row2', 11);
           if(row.column07 == '3750'){
-              console.log('row2', 22);
-            row.column07 == '3688';
-            row.column12 == '147520';
+            row.column07 = '3688';
+            row.column12 = '147520';
           }
         }
       }
