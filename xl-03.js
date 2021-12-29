@@ -5,10 +5,14 @@ function interceptintercept(content, resp){
       var data = json.result.pageResult.page;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
-        if(row.column10 == '10月结算'){
+        if(row.column10 == '11月结算'){
+          if(row.linkKey == '6694'){
+            row.column07 = '2347';
+            row.column12 = '93880';
+          }
           if(row.linkKey == '7211'){
-            row.column07 = '789';
-            row.column12 = '31560';
+            row.column07 = '2605';
+            row.column12 = '104200';
           }
         }
       }
