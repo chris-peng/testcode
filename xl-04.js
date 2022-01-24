@@ -11,7 +11,7 @@ function interceptintercept(content, resp){
             row.column12 = '5960';
           }
           if(row.linkKey == '6693' && row.column07 == '321'){
-            row.column08 = '15.59345794';
+            row.column08 = '15.5934579439';
             row.column12 = '5005.5';
           }
           if(row.linkKey == '6694' && row.column07 == '2343'){
