@@ -5,14 +5,22 @@ function interceptintercept(content, resp){
       var data = json.result.pageResult.page;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
-        if(row.column10 == '11月结算'){
-          if(row.linkKey == '6694'){
-            row.column07 = '2347';
-            row.column12 = '93880';
+        if(row.column10 == '12月结算'){
+          if(row.linkKey == '7275' && row.column07 == '169'){
+            row.column07 = '149';
+            row.column12 = '5960';
           }
-          if(row.linkKey == '7211'){
-            row.column07 = '2605';
-            row.column12 = '104200';
+          if(row.linkKey == '6693' && row.column07 == '321'){
+            row.column08 = '15.59345794';
+            row.column12 = '5005.5';
+          }
+          if(row.linkKey == '6694' && row.column07 == '2343'){
+            row.column07 = '2253';
+            row.column12 = '90120';
+          }
+          if(row.linkKey == '7211' && row.column07 == '2573'){
+            row.column07 = '2403';
+            row.column12 = '96120';
           }
         }
       }
