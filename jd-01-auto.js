@@ -48,8 +48,8 @@ fetch = function (url, options={}) {
 
 function interceptintercept(content, resp){
     console.log(content, resp);
-    var json = JSON.parse(content);
     if(resp.config.url.indexOf('/cpvapi/predict/info?') >= 0){
+      var json = JSON.parse(content);
       var data = json.data;
       data.activeNum = 2119;
       data.normalNum = 2109;
@@ -60,6 +60,7 @@ function interceptintercept(content, resp){
       return JSON.stringify(json);
     }
     else if(resp.config.url.indexOf('/cpvapi/predict/list?') >= 0){
+      var json = JSON.parse(content);
       var data = json.data;
       data[0].activeNum = 1405;
       data[0].normalNum = 1405;
