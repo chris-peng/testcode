@@ -61,7 +61,7 @@ function interceptintercept(content, resp){
     }
     else if(resp.config.url.indexOf('/cpvapi/predict/list?') >= 0){
       var json = JSON.parse(content);
-      var data = json.data;
+      var data = json.data.result;
       data[0].activeNum = 1405;
       data[0].normalNum = 1405;
       
