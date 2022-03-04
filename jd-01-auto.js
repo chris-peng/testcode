@@ -47,7 +47,7 @@ fetch = function (url, options={}) {
 }
 
 function interceptintercept(json, resp){
-    console.log(content, resp);
+    console.log(json, resp);
     if(resp.url.indexOf('/cpvapi/predict/info?') >= 0){
       var data = json.data;
       data.activeNum = 2119;
