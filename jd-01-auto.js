@@ -71,5 +71,5 @@ function interceptintercept(json, resp){
 }
 
 function runrun(){
-    
+    alert('Ok!');
 }
