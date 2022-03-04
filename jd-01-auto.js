@@ -70,19 +70,6 @@ function interceptintercept(json, resp){
     return json;
 }
 
-var hookscript = document.createElement('script');
-hookscript.src='https://unpkg.com/ajax-hook@2.0.3/dist/ajaxhook.min.js';
-hookscript.onload = function(){
-    ah.proxy({
-      onResponse: function(response, handler){
-        response.response = interceptintercept(response.response, response);
-        handler.next(response);
-      }
-    });
-    alert('OK！');
-};
-document.head.appendChild(hookscript);
-
 function runrun(){
     
 }
