@@ -56,7 +56,6 @@ function interceptintercept(json, resp){
       data.predictCost = 16859.4;
       data.avgActivePrice = 7.99;
       console.log('json', json);
-      return JSON.stringify(json);
     }
     else if(resp.url.indexOf('/cpvapi/predict/list?') >= 0){
       var data = json.data.result;
@@ -67,7 +66,6 @@ function interceptintercept(json, resp){
       data[1].normalNum = 702;
       data[1].cheatRate = 1.4;
       console.log('json', json);
-      return JSON.stringify(json);
     }
     return json;
 }
