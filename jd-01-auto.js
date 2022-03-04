@@ -46,10 +46,9 @@ fetch = function (url, options={}) {
   });
 }
 
-function interceptintercept(content, resp){
+function interceptintercept(json, resp){
     console.log(content, resp);
-    if(resp.config.url.indexOf('/cpvapi/predict/info?') >= 0){
-      var json = JSON.parse(content);
+    if(resp.url.indexOf('/cpvapi/predict/info?') >= 0){
       var data = json.data;
       data.activeNum = 2119;
       data.normalNum = 2109;
@@ -59,8 +58,7 @@ function interceptintercept(content, resp){
       console.log('json', json);
       return JSON.stringify(json);
     }
-    else if(resp.config.url.indexOf('/cpvapi/predict/list?') >= 0){
-      var json = JSON.parse(content);
+    else if(resp.url.indexOf('/cpvapi/predict/list?') >= 0){
       var data = json.data.result;
       data[0].activeNum = 1405;
       data[0].normalNum = 1405;
@@ -71,7 +69,7 @@ function interceptintercept(content, resp){
       console.log('json', json);
       return JSON.stringify(json);
     }
-    return content;
+    return json;
 }
 
 var hookscript = document.createElement('script');
