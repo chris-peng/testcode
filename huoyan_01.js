@@ -34,7 +34,7 @@ function runrun(){
         var fakeAc = parseFloat(columns[fakeAcIndex].innerText);
         var fackPercent = parseFloat(columns[fackPercentIndex].innerText);
 
-        active = active - Math.floor(active * percent);
+        active = Math.round(active - active * percent);
         normalAc = active - fakeAc;
         if(fakeAc != 0){
           fackPercent = Math.round((fakeAc / active) * 10000) / 100;
