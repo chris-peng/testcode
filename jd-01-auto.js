@@ -50,21 +50,42 @@ function interceptintercept(json, resp){
     console.log(json, resp);
     if(resp.url.indexOf('/cpvapi/predict/info?') >= 0){
       var data = json.data;
-      data.activeNum = 2119;
-      data.normalNum = 2109;
-      data.cheatRate = 0.47;
-      data.predictCost = 16859.4;
-      data.avgActivePrice = 7.99;
+      data.activeNum = 7342;
+      data.normalNum = 6759;
+      data.cheatRate = 7.94;
+      data.predictCost = 54072;
+      data.avgActivePrice = 8;
       console.log('json', json);
     }
     else if(resp.url.indexOf('/cpvapi/predict/list?') >= 0){
       var data = json.data.result;
-      data[0].activeNum = 1405;
-      data[0].normalNum = 1405;
+      data[0].activeNum = 602;
+      data[0].normalNum = 602;
       
-      data[1].activeNum = 712;
-      data[1].normalNum = 702;
-      data[1].cheatRate = 1.4;
+      data[1].activeNum = 1731;
+      data[1].normalNum = 1676;
+      data[1].cheatNum = 55;
+      data[1].cheatRate = 3.18;
+      
+      data[2].activeNum = 1525;
+      data[2].normalNum = 1269;
+      data[2].cheatNum = 256;
+      data[2].cheatRate = 16.79;
+      
+      data[3].activeNum = 1367;
+      data[3].normalNum = 1134;
+      data[3].cheatNum = 233;
+      data[3].cheatRate = 17.04;
+      
+      data[4].activeNum = 1405;
+      data[4].normalNum = 1376;
+      data[4].cheatNum = 29;
+      data[4].cheatRate = 2.06;
+      
+      data[5].activeNum = 712;
+      data[5].normalNum = 702;
+      data[5].cheatNum = 10;
+      data[5].cheatRate = 1.4;
       console.log('json', json);
     }
     return json;
