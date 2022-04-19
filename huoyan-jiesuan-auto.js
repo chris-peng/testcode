@@ -76,8 +76,8 @@ function interceptintercept(json, resp){
 
             if(active >= activeCountLimit){
                 price = price - (price * priceDeductPercent);
-                active = active - Math.floor(active * activeDeductPercent);
-                fakeAc = fakeAc + Math.ceil(fakeAc * fackAcIncPercent);
+                active = active - Math.round(active * activeDeductPercent);
+                fakeAc = fakeAc + Math.round(fakeAc * fackAcIncPercent);
                 normalAc = active - fakeAc;
                 fackPercent = Math.round((fakeAc / active) * 10000) / 100;
                 fee = Math.round(price * normalAc * 100) / 100;
