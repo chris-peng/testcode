@@ -1,6 +1,6 @@
 function interceptintercept(content, resp){
     console.log(content, resp);
-    if(resp.config.url.indexOf('/statement/list?') >= 0){
+    if(resp.url.indexOf('/statement/list?') >= 0){
       alert(111);
       var json = JSON.parse(content);
       var data = json.result.pageResult.page;
@@ -36,6 +36,7 @@ hookscript.src='https://unpkg.com/ajax-hook@2.0.3/dist/ajaxhook.min.js';
 hookscript.onload = function(){
     ah.proxy({
       onResponse: function(response, handler){
+        response.url = response.config.url;
         response.response = interceptintercept(response.response, response);
         handler.next(response);
       }
