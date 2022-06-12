@@ -14,6 +14,24 @@ function interceptintercept(content, resp){
       }
       console.log('json', json);
       return JSON.stringify(json);
+    } else if(resp.url.indexOf('/statement/info?') >= 0){
+      var json = JSON.parse(content);
+      var data = json.data.result;
+      for(var i = 0; i < data.length; i++){
+        var row = data[i];
+        row.activeNum = 67146;
+        row.activeNumPer = 372933.33;
+        row.normalNum = 63629;
+        row.normalNumPer = 397581.25;
+        row.cheatRatePer = -52.84;
+        row.cheatRate = 5.24;
+        row.statementCost = 460572.08;
+        row.statementCostPer = 1814604.81;
+        row.avgActivePrice = 7.24;
+        row.avgActivePricePer = 355.35;
+      }
+      console.log('json', json);
+      return JSON.stringify(json);
     }
     return content;
 }
