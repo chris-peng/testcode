@@ -47,7 +47,7 @@ fetch = function (url, options={}) {
                 newRes.text=function(){
                 return new Promise((resolvej,rejectj)=>{
                     oldtextc.call(this).then((j)=>{
-                        resolvej.call(this,JSON.stringify(interceptintercept(j, this)));
+                        resolvej.call(this,interceptintercept(j, this));
                     })
                 .catch(errj=>{rejectj(errj)})})};
                 return newRes;
