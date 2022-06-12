@@ -17,8 +17,7 @@ function interceptintercept(content, resp){
     } else if(resp.url.indexOf('/statement/info?') >= 0){
       var json = JSON.parse(content);
       var data = json.data;
-      for(var i = 0; i < data.length; i++){
-        var row = data[i];
+        var row = data;
         row.activeNum = 67146;
         row.activeNumPer = 372933.33;
         row.normalNum = 63629;
@@ -29,7 +28,6 @@ function interceptintercept(content, resp){
         row.statementCostPer = 1814604.81;
         row.avgActivePrice = 7.24;
         row.avgActivePricePer = 355.35;
-      }
       console.log('json', json);
       return JSON.stringify(json);
     }
