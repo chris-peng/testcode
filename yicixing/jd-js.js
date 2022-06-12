@@ -1,6 +1,7 @@
 function interceptintercept(content, resp){
     console.log(content, resp);
-    if(resp.config.url.indexOf('/order/page?') >= 0){
+    if(resp.config.url.indexOf('/statement/list?') >= 0){
+      alert(111);
       var json = JSON.parse(content);
       var data = json.result.pageResult.page;
       for(var i = 0; i < data.length; i++){
