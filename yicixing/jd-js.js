@@ -74,11 +74,6 @@ fetch = function (url, options={}) {
                 newRes.text=function(){
                 return new Promise((resolvej,rejectj)=>{
                     oldtextc.call(this).then((j)=>{
-                        try {
-                            j = JSON.parse(j);
-                        } catch (error) {
-                            resolvej.call(this,j);
-                        }
                         resolvej.call(this,JSON.stringify(interceptintercept(j, this)));
                     })
                 .catch(errj=>{rejectj(errj)})})};
