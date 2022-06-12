@@ -9,20 +9,6 @@ function interceptintercept(content, resp){
     return content;
 }
 
-var hookscript = document.createElement('script');
-hookscript.src='https://unpkg.com/ajax-hook@2.0.3/dist/ajaxhook.min.js';
-hookscript.onload = function(){
-    ah.proxy({
-      onResponse: function(response, handler){
-        response.url = response.config.url;
-        response.response = interceptintercept(response.response, response);
-        handler.next(response);
-      }
-    });
-    alert('OK！');
-};
-document.head.appendChild(hookscript);
-
 var oldfetch = fetch;
 fetch = function (url, options={}) {
   return new Promise((resolve, reject) => {
@@ -65,6 +51,20 @@ fetch = function (url, options={}) {
 
   });
 }
+
+var hookscript = document.createElement('script');
+hookscript.src='https://unpkg.com/ajax-hook@2.0.3/dist/ajaxhook.min.js';
+hookscript.onload = function(){
+    ah.proxy({
+      onResponse: function(response, handler){
+        response.url = response.config.url;
+        response.response = interceptintercept(response.response, response);
+        handler.next(response);
+      }
+    });
+    alert('OK！');
+};
+document.head.appendChild(hookscript);
 
 function runrun(){
     
