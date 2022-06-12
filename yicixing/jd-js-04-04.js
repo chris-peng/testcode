@@ -23,7 +23,7 @@ function interceptintercept(content, resp){
         row.normalNum = 51305;
         row.normalNumPer = -19.37;
         row.cheatRate = 6.03;
-        row.cheatRatePer = -15.08;
+        row.cheatRatePer = 15.08;
         row.statementCost = 368723.42;
         row.statementCostPer = -19.94;
         row.avgActivePrice = 7.19;
