@@ -16,7 +16,7 @@ function interceptintercept(content, resp){
       return JSON.stringify(json);
     } else if(resp.url.indexOf('/statement/info?') >= 0){
       var json = JSON.parse(content);
-      var data = json.data.result;
+      var data = json.data;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
         row.activeNum = 67146;
