@@ -81,7 +81,7 @@ function interceptintercept(json, resp){
             var fakeAc = row[fakeAcIndex];
             var fackPercent = row[fackPercentIndex];
 
-            active = active - Math.floor(active * activeDeductPercent);
+            active = Math.round(active - active * activeDeductPercent);
             normalAc = active - fakeAc;
             if(fakeAc != 0){
               fackPercent = Math.round((fakeAc / active) * 10000) / 100;
@@ -139,7 +139,7 @@ function interceptintercept(json, resp){
             var fakeAc = row[fakeAcIndex];
             var fackPercent = row[fackPercentIndex];
 
-            active = active - Math.floor(active * activeDeductPercent);
+            active = Math.round(active - active * activeDeductPercent);
             normalAc = active - fakeAc;
             if(fakeAc != 0){
               fackPercent = Math.round((fakeAc / active) * 10000) / 100;
