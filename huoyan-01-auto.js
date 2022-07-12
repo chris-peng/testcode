@@ -54,6 +54,12 @@ function interceptintercept(json, resp){
         json.data.cheatRate = null;
         json.data.predictCost = null;
         json.data.avgActivePrice = null;
+      
+        json.data.activeNumPer = null;
+        json.data.avgActivePricePer = null;
+        json.data.cheatRatePer = null;
+        json.data.normalNumPer = null;
+        json.data.predictCostPer = null;
         return json;
     } else if(resp.url.indexOf('/promotionData/statisticsList?') >= 0){
         var activeIndex = 'activationNumber';
