@@ -55,11 +55,11 @@ function interceptintercept(json, resp){
         json.data.predictCost = null;
         json.data.avgActivePrice = null;
       
-        json.data.activeNumPer = null;
-        json.data.avgActivePricePer = null;
-        json.data.cheatRatePer = null;
-        json.data.normalNumPer = null;
-        json.data.predictCostPer = null;
+        json.data.activeNumPer = 0;
+        json.data.avgActivePricePer = 0;
+        json.data.cheatRatePer = 0;
+        json.data.normalNumPer = 0;
+        json.data.predictCostPer = 0;
         return json;
     } else if(resp.url.indexOf('/promotionData/statisticsList?') >= 0){
         var activeIndex = 'activationNumber';
@@ -186,18 +186,33 @@ function interceptintercept(json, resp){
         var overviewPercents = document.querySelectorAll('.ant-statistic-content-suffix div');
         if(uOverviewPercents.length > 1){
           overviewPercents[0].innerText = uOverviewPercents[1] + '%';
+          if(parseFloat(uOverviewPercents[1]) < 0) {
+            overviewPercents[0].style.color = 'red';
+          }
         }
         if(uOverviewPercents.length > 2){
           overviewPercents[1].innerText = uOverviewPercents[2] + '%';
+          if(parseFloat(uOverviewPercents[2]) < 0) {
+            overviewPercents[1].style.color = 'red';
+          }
         }
         if(uOverviewPercents.length > 3){
           overviewPercents[2].innerText = uOverviewPercents[3] + '%';
+          if(parseFloat(uOverviewPercents[3]) < 0) {
+            overviewPercents[2].style.color = 'red';
+          }
         }
         if(uOverviewPercents.length > 4){
           overviewPercents[3].innerText = uOverviewPercents[4] + '%';
+          if(parseFloat(uOverviewPercents[4]) < 0) {
+            overviewPercents[3].style.color = 'red';
+          }
         }
         if(uOverviewPercents.length > 5){
           overviewPercents[4].innerText = uOverviewPercents[5] + '%';
+          if(parseFloat(uOverviewPercents[5]) < 0) {
+            overviewPercents[4].style.color = 'red';
+          }
         }
         return json;
     }
