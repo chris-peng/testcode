@@ -46,6 +46,22 @@ fetch = function (url, options={}) {
   });
 }
 
+document.querySelectorAll('.ant-btn-primary')[1].onclick= function(){
+  var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
+  overviewValues[0].innerText = '0';
+  overviewValues[1].innerText = '0';
+  overviewValues[2].innerText = '0';
+  overviewValues[3].innerText = '0';
+  overviewValues[4].innerText = '0';
+  
+  var overviewPercents = document.querySelectorAll('.ant-statistic-content-suffix div');
+  overviewPercents[0].innerText = '--%';
+  overviewPercents[1].innerText = '--%';
+  overviewPercents[2].innerText = '--%';
+  overviewPercents[3].innerText = '--%';
+  overviewPercents[4].innerText = '--%';
+}
+
 function interceptintercept(json, resp){
     console.log(json, resp);
     if(resp.url.indexOf('/predict/info?')>=0) {
@@ -55,33 +71,20 @@ function interceptintercept(json, resp){
         json.data.predictCost = null;
         json.data.avgActivePrice = null;
       
-        var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
-        overviewValues[0].innerText = '0';
-        overviewValues[1].innerText = '0';
-        overviewValues[2].innerText = '0';
-        overviewValues[3].innerText = '0';
-        overviewValues[4].innerText = '0';
-      
-        var overviewPercents = document.querySelectorAll('.ant-statistic-content-suffix div');
         if(uOverviewPercents.length > 1){
           json.data.activeNumPer = null;
-          overviewPercents[0].innerText = '--%';
         }
         if(uOverviewPercents.length > 2){
           json.data.normalNumPer = null;
-          overviewPercents[1].innerText = '--%';
         }
         if(uOverviewPercents.length > 3){
           json.data.cheatRatePer = null;
-          overviewPercents[2].innerText = '--%';
         }
         if(uOverviewPercents.length > 4){
           json.data.predictCostPer = null;
-          overviewPercents[3].innerText = '--%';
         }
         if(uOverviewPercents.length > 5){
           json.data.avgActivePricePer = null;
-          overviewPercents[4].innerText = '--%';
         }
         return json;
     } else if(resp.url.indexOf('/promotionData/statisticsList?') >= 0){
