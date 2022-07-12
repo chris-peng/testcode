@@ -55,11 +55,34 @@ function interceptintercept(json, resp){
         json.data.predictCost = null;
         json.data.avgActivePrice = null;
       
-        json.data.activeNumPer = 0;
-        json.data.avgActivePricePer = 0;
-        json.data.cheatRatePer = 0;
-        json.data.normalNumPer = 0;
-        json.data.predictCostPer = 0;
+        var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
+        overviewValues[0].innerText = '0';
+        overviewValues[1].innerText = '0';
+        overviewValues[2].innerText = '0';
+        overviewValues[3].innerText = '0';
+        overviewValues[4].innerText = '0';
+      
+        var overviewPercents = document.querySelectorAll('.ant-statistic-content-suffix div');
+        if(uOverviewPercents.length > 1){
+          json.data.activeNumPer = null;
+          overviewPercents[0].innerText = '--%';
+        }
+        if(uOverviewPercents.length > 2){
+          json.data.normalNumPer = null;
+          overviewPercents[1].innerText = '--%';
+        }
+        if(uOverviewPercents.length > 3){
+          json.data.cheatRatePer = null;
+          overviewPercents[2].innerText = '--%';
+        }
+        if(uOverviewPercents.length > 4){
+          json.data.predictCostPer = null;
+          overviewPercents[3].innerText = '--%';
+        }
+        if(uOverviewPercents.length > 5){
+          json.data.avgActivePricePer = null;
+          overviewPercents[4].innerText = '--%';
+        }
         return json;
     } else if(resp.url.indexOf('/promotionData/statisticsList?') >= 0){
         var activeIndex = 'activationNumber';
