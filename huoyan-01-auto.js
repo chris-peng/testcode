@@ -176,22 +176,42 @@ function interceptintercept(json, resp){
         overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
         overviewValues[3].innerText = _overview.predictCost.toLocaleString();
         overviewValues[4].innerText = _overview.avgActivePrice.toLocaleString();
+      
+        var overviewPercents = document.querySelectorAll('.ant-statistic-content-suffix div');
+        if(uOverviewPercents.length > 1){
+          overviewPercents[0].innerText = uOverviewPercents[1] + '%';
+        }
+        if(uOverviewPercents.length > 2){
+          overviewPercents[1].innerText = uOverviewPercents[2] + '%';
+        }
+        if(uOverviewPercents.length > 3){
+          overviewPercents[2].innerText = uOverviewPercents[3] + '%';
+        }
+        if(uOverviewPercents.length > 4){
+          overviewPercents[3].innerText = uOverviewPercents[4] + '%';
+        }
+        if(uOverviewPercents.length > 5){
+          overviewPercents[4].innerText = uOverviewPercents[5] + '%';
+        }
         return json;
     }
     return json;
 }
 
 var activeDeductPercent, priceDeductPercent, fackAcIncPercent;
+var uOverviewPercents;
 var activeCountLimit = 10;
 
 function runrun(){
     alert('注意：总览区域不支持多页数据！');
-    var percents = prompt('输入扣除百分比:', '10');
+    var percents = prompt('输入扣除百分比（，总览百分比等）:', '10');
     if(percents == null){
         return;
     }
     percents = percents.split(',');
     activeDeductPercent = parseFloat(percents[0]) / 100;
+  
+    uOverviewPercents = percents;
     //priceDeductPercent = parseFloat(percents[1]) / 100;
     //fackAcIncPercent = parseFloat(percents[2]) / 100;
 }
