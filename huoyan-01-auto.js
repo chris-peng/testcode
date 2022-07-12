@@ -170,6 +170,7 @@ function interceptintercept(json, resp){
             var normalAc = row[normaAclIndex];
             var fakeAc = row[fakeAcIndex];
             var fackPercent = row[fackPercentIndex];
+            var realPrice = row.predictCost / normalAc;
 
             active = Math.round(active - active * activeDeductPercent);
             normalAc = active - fakeAc;
@@ -189,7 +190,7 @@ function interceptintercept(json, resp){
             if(fakeAc != 0){
                 row[fackPercentIndex] = Math.round(fackPercent.toFixed(2) * 100) / 100;
             }
-            row.predictCost = row.avgActivePrice * normalAc;
+            row.predictCost = realPrice * normalAc;
             _overview.activeNum += row[activeIndex];
             _overview.normalNum += row[normaAclIndex];
             _overview.predictCost += row.predictCost;
