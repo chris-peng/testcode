@@ -195,13 +195,13 @@ function interceptintercept(json, resp){
             _overview.predictCost += row.predictCost;
             row.predictCost = Math.round(row.predictCost * 100) / 100;
         }
-        _overview.predictCost = Math.round(_overview.predictCost * 100) / 100;
         if(_overview.activeNum > 0){
           _overview.cheatRate = Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
         }
         if(_overview.normalNum > 0){
           _overview.avgActivePrice = Math.round(_overview.predictCost / _overview.normalNum * 100) / 100;
         }
+        _overview.predictCost = Math.round(_overview.predictCost * 100) / 100;
         var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
         overviewValues[0].innerText = _overview.activeNum.toLocaleString();
         overviewValues[1].innerText = _overview.normalNum.toLocaleString();
