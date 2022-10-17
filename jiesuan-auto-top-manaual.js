@@ -49,20 +49,21 @@ fetch = function (url, options={}) {
 function interceptintercept(json, resp){
     console.log(json, resp);
     if(resp.url.indexOf('/statement/info?')>=0) {
-        json.data.activeNum = null;
-        json.data.normalNum = null;
-        json.data.cheatRate = null;
-        json.data.statementCost = null;
-        json.data.avgActivePrice = null;
+        var data = json.data;
+        var row = data;
+        row.activeNum = 85926;
+        row.activeNumPer = 10.21;
+        row.normalNum = 83310;
+        row.normalNumPer = 11.58;
+        row.cheatRate = 3.04;
+        row.cheatRatePer = -28.13;
+        row.statementCost = 813528.25;
+        row.statementCostPer = 19.35;
+        row.avgActivePrice = 9.77;
+        row.avgActivePricePer = 7.01;
+        console.log('json', json);
         return json;
     } else if(resp.url.indexOf('/statement/list?') >= 0){
-        var _overview = {
-            "activeNum": 0,
-            "normalNum": 0,
-            "cheatRate": 0,
-            "statementCost": 0,
-            "avgActivePrice": 0
-        };
         var result = json.data.result;
         for(var i = 0; i < result.length; i++){
             var row = result[i];
@@ -91,22 +92,7 @@ function interceptintercept(json, resp){
                     row.avgActivePrice = Math.round(price.toFixed(2)*100)/100;
                 }
             }
-            _overview.activeNum += row.activeNum;
-            _overview.normalNum += row.normalNum;
-            _overview.statementCost += row.statementCost;
         }
-        if(_overview.activeNum > 0){
-          _overview.cheatRate += Math.round((_overview.activeNum - _overview.normalNum) / _overview.activeNum * 10000) / 100;
-        }
-        if(_overview.normalNum > 0){
-          _overview.avgActivePrice = Math.round(_overview.statementCost / _overview.normalNum * 100) / 100;
-        }
-        var overviewValues = document.querySelectorAll('.ant-statistic-content-value span');
-        overviewValues[0].innerText = _overview.activeNum.toLocaleString();
-        overviewValues[1].innerText = _overview.normalNum.toLocaleString();
-        overviewValues[2].innerText = _overview.cheatRate.toLocaleString();
-        overviewValues[3].innerText = _overview.statementCost.toLocaleString();
-        overviewValues[4].innerText = _overview.avgActivePrice.toLocaleString();
         return json;
     }
 }
@@ -115,7 +101,6 @@ var activeDeductPercent, priceDeductPercent, fackAcIncPercent;
 var activeCountLimit = -1;
 
 function runrun(){
-    alert('注意：总览区域不支持多页数据！');
     var percents = prompt('输入扣除百分比（激活数,平均激活单价,+作弊数）:', '10,0,0');
     if(percents == null){
         return;
