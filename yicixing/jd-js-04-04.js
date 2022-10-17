@@ -5,12 +5,30 @@ function interceptintercept(content, resp){
       var data = json.data.result;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
-        row.activeNum = 54597;
-        row.normalNum = 51305;
-        row.cheatNum = 3292;
-        row.cheatRate = 6.03;
-        row.statementCost = 368723.42;
-        row.avgActivePrice = 7.19;
+        if(i == 0){
+            row.activeNum = 12372;
+            row.normalNum = 8507;
+            row.cheatNum = 3865;
+            row.cheatRate = 31.24;
+            row.statementCost = 59719.86;
+            row.avgActivePrice = 7.02;
+        }
+          if(i == 1){
+            row.activeNum = 22920;
+            row.normalNum = 20625;
+            row.cheatNum = 2295;
+            row.cheatRate = 10.01;
+            row.statementCost = 207075.38;
+            row.avgActivePrice = 10.04;
+        }
+          if(i == 2){
+            row.activeNum = 16537;
+            row.normalNum = 12795;
+            row.cheatNum = 3742;
+            row.cheatRate = 22.63;
+            row.statementCost = 91612.71;
+            row.avgActivePrice = 7.16;
+        }
       }
       console.log('json', json);
       return JSON.stringify(json);
@@ -18,16 +36,16 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data;
         var row = data;
-        row.activeNum = 54597;
-        row.activeNumPer = -18.69;
-        row.normalNum = 51305;
-        row.normalNumPer = -19.37;
-        row.cheatRate = 6.03;
-        row.cheatRatePer = 15.08;
-        row.statementCost = 368723.42;
-        row.statementCostPer = -19.94;
-        row.avgActivePrice = 7.19;
-        row.avgActivePricePer = -0.69;
+        row.activeNum = 51829;
+        row.activeNumPer = 0;
+        row.normalNum = 41927;
+        row.normalNumPer = 0;
+        row.cheatRate = 19.11;
+        row.cheatRatePer = 0;
+        row.statementCost = 358407.95;
+        row.statementCostPer = 0;
+        row.avgActivePrice = 8.55;
+        row.avgActivePricePer = 0;
       console.log('json', json);
       return JSON.stringify(json);
     }
