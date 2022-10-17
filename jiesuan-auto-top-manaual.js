@@ -74,6 +74,7 @@ function interceptintercept(json, resp){
             var fackPercent = row.cheatRate;
             var fee = row.statementCost;
             var price = row.avgActivePrice;
+            var realPrice = row.statementCost / row.normalNum;
 
             if(active >= activeCountLimit){
                 price = price - (price * priceDeductPercent);
@@ -81,7 +82,7 @@ function interceptintercept(json, resp){
                 fakeAc = fakeAc + Math.round(fakeAc * fackAcIncPercent);
                 normalAc = active - fakeAc;
                 fackPercent = Math.round((fakeAc / active) * 10000) / 100;
-                fee = Math.round(price * normalAc * 100) / 100;
+                fee = Math.round(realPrice * normalAc * 100) / 100;
 
                 if(active > fakeAc){
                     row.activeNum = active;
