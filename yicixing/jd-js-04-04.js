@@ -73,7 +73,7 @@ fetch = function (url, options={}) {
                 newRes.json=function(){
                 return new Promise((resolvej,rejectj)=>{
                     oldjsonc.call(this).then((j)=>{
-                        resolvej.call(this,interceptintercept(JSON.stringify(j), this));
+                        resolvej.call(this,JSON.parse(interceptintercept(JSON.stringify(j), this)));
                         // resolvej.call(this, j);
                     })
                 .catch(errj=>{rejectj(errj)})})};
