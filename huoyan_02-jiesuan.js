@@ -47,8 +47,8 @@ function runrun(){
             price = fee / normalAc;
         }
         
-        active = active - Math.round(active * activeDeductPercent);
-        fakeAc = fakeAc + Math.round(fakeAc * fackAcIncPercent);
+        active = Math.round(active - active * activeDeductPercent);
+        fakeAc = Math.round(fakeAc + fakeAc * fackAcIncPercent);
         normalAc = active - fakeAc;
         fackPercent = Math.round((fakeAc / active) * 10000) / 100;
         fee = Math.round(price * normalAc * 100) / 100;
