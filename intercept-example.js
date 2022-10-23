@@ -1,12 +1,11 @@
-function interceptintercept(content, resp){
-    console.log(content, resp);
+function interceptintercept(json, resp){
+    console.log(json, resp);
     if(resp.url.indexOf('/aa?') >= 0){
-      var json = JSON.parse(content);
       json.changeField = '1';
       console.log('json', json);
-      return JSON.stringify(json);
+      return json;
     }
-    return content;
+    return json;
 }
 
 var oldfetch = fetch;
@@ -30,15 +29,20 @@ fetch = function (url, options={}) {
                 newRes.json=function(){
                 return new Promise((resolvej,rejectj)=>{
                     oldjsonc.call(this).then((j)=>{
-                        // resolvej.call(this,interceptintercept(j, this));
-                        resolvej.call(this, j);
+                        resolvej.call(this,interceptintercept(j, this));
+                        // resolvej.call(this, j);
                     })
                 .catch(errj=>{rejectj(errj)})})};
                 var oldtextc = newRes.text;
                 newRes.text=function(){
                 return new Promise((resolvej,rejectj)=>{
                     oldtextc.call(this).then((j)=>{
-                        resolvej.call(this,interceptintercept(j, this));
+                        try {
+                            j = JSON.parse(j);
+                        } catch (error) {
+                            resolvej.call(this,j);
+                        }
+                        resolvej.call(this,JSON.stringify(interceptintercept(j, this)));
                     })
                 .catch(errj=>{rejectj(errj)})})};
                 return newRes;
@@ -58,7 +62,7 @@ hookscript.onload = function(){
     ah.proxy({
       onResponse: function(response, handler){
         response.url = response.config.url;
-        response.response = interceptintercept(response.response, response);
+        response.response = JSON.stringify(interceptintercept(JSON.parse(response.response), response));
         handler.next(response);
       }
     });
