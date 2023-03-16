@@ -1,9 +1,9 @@
 var activeIndex = 4;
 var normaAclIndex = 5;
-var fakeAcIndex = 6;
-var fackPercentIndex = 7;
-var feeIndex = 8;
-var priceIndex = 9;
+var fakeAcIndex = 7;
+var fackPercentIndex = 8;
+var feeIndex = 9;
+var priceIndex = 10;
 
 var activeCountLimit = -1;
 
