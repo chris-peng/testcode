@@ -6,7 +6,7 @@ function interceptintercept(content, resp){
       for(var i = 0; i < data.length; i++){
         var row = data[i];
         if(i == 0){
-            row.activeNum = 40167;
+            row.activeNum = 16718;
             row.normalNum = 37996;
             row.totalRewardAmount = 0;
             row.cheatNum = 2171;
