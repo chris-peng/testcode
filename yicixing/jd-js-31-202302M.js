@@ -6,13 +6,13 @@ function interceptintercept(content, resp){
       for(var i = 0; i < data.length; i++){
         var row = data[i];
         if(i == 0){
-            row.activeNum = 10624;
-            row.normalNum = 9068;
+            row.activeNum = 40167;
+            row.normalNum = 37996;
             row.totalRewardAmount = 0;
-            row.cheatNum = 1556;
-            row.cheatRate = 14.65;
-            row.statementCost = 68145.44;
-            row.avgActivePrice = 7.51;
+            row.cheatNum = 2171;
+            row.cheatRate = 5.4;
+            row.statementCost = 225734.63;
+            row.avgActivePrice = 5.94;
         }
       }
       console.log('json', json);
@@ -21,16 +21,16 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data;
         var row = data;
-        row.activeNum = 10624;
-        row.activeNumPer = 41.94;
-        row.normalNum = 9068;
-        row.normalNumPer = 46.14;
-        row.cheatRate = 14.65;
-        row.cheatRatePer = -14.33;
-        row.statementCost = 68145.44;
-        row.statementCostPer = 25.64;
-        row.avgActivePrice = 7.51;
-        row.avgActivePricePer = -14.07;
+        row.activeNum = 40167;
+        row.activeNumPer = -24.99;
+        row.normalNum = 37996;
+        row.normalNumPer = -25.59;
+        row.cheatRate = 5.4;
+        row.cheatRatePer = 16.38;
+        row.statementCost = 225734.63;
+        row.statementCostPer = -44.11;
+        row.avgActivePrice = 5.94;
+        row.avgActivePricePer = -24.91;
       console.log('json', json);
       return JSON.stringify(json);
     }
