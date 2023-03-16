@@ -8,7 +8,7 @@ function interceptintercept(content, resp){
         if(i == 0){
             row.activeNum = 2712;
             row.normalNum = 2181;
-            row.rewardNum = 0;
+            row.totalRewardAmount = 0;
             row.cheatNum = 531;
             row.cheatRate = 19.58;
             row.statementCost = 11665.57;
