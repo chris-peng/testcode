@@ -10,7 +10,7 @@ function interceptintercept(content, resp){
             row.normalNum = 15098;
             row.totalRewardAmount = 0;
             row.cheatNum = 1620;
-            row.cheatRate = 9.469;
+            row.cheatRate = 9.69;
             row.statementCost = 85059.1;
             row.avgActivePrice = 5.63;
         }
