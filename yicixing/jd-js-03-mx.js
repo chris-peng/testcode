@@ -1,11 +1,11 @@
 var detailData = [
-  {"stime": "2023-03", "activeNum": 117, "avgActivePrice": 7.0, "cheatNum":105, "cheatRate": 8.98, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0}
-  ,{"stime": "2023-03-01", "activeNum": 111, "avgActivePrice": 7.0, "cheatNum":105, "cheatRate": 8.98, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0}
+  {"stime": "2023-03", "activeNum": 117, "avgActivePrice": 7.0, "cheatNum":105, "cheatRate": 8.98, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0},
+  {"stime": "2023-03-01", "activeNum": 111, "avgActivePrice": 7.0, "cheatNum":105, "cheatRate": 8.98, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0},
 ];
 
 var detailDataMap = {};
 for(index in detailData){
-  detailDataMap[detailData[i].stime] = detailData[i];
+  detailDataMap[detailData[index].stime] = detailData[index];
 }
 
 function interceptintercept(content, resp){
