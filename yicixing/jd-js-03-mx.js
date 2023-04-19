@@ -1,5 +1,5 @@
 var detailData = [
-  {"stime": "2023-03", "activeNum": 117, "avgActivePrice": 7.0, "cheatNum":105, "cheatRate": 8.98, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0},
+  {"stime": "2023-03", "activeNum": 10860, "avgActivePrice": 6.5, "cheatNum":1037, "cheatRate": 9.55, "normalNum": 9823, "statementCost": 63838.85, "totalRewardAmount":0},
   {"stime": "2023-03-01", "activeNum": 316, "avgActivePrice": 9.67, "cheatNum":21, "cheatRate": 6.65, "normalNum": 295, "statementCost": 2853.97, "totalRewardAmount":0},
   {"stime": "2023-03-02", "activeNum": 345, "avgActivePrice": 7.63, "cheatNum":33, "cheatRate": 9.57, "normalNum": 312, "statementCost": 2380.58, "totalRewardAmount":0},
   {"stime": "2023-03-03", "activeNum": 364, "avgActivePrice": 8.74, "cheatNum":58, "cheatRate": 15.93, "normalNum": 306, "statementCost": 2674.94, "totalRewardAmount":0},
