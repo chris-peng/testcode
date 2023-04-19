@@ -1,6 +1,7 @@
 var detailData = [
   {"stime": "2023-03", "activeNum": 117, "avgActivePrice": 7.0, "cheatNum":105, "cheatRate": 8.98, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0},
   {"stime": "2023-03-01", "activeNum": 111, "avgActivePrice": 7.0, "cheatNum":105, "cheatRate": 8.98, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0},
+  {"stime": "2023-03-31", "activeNum": 113, "avgActivePrice": 7.33, "cheatNum":100, "cheatRate": 8.91, "normalNum": 10687, "statementCost": 75887.35, "totalRewardAmount":0},
 ];
 
 var detailDataMap = {};
