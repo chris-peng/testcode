@@ -2,7 +2,7 @@ var detailData = [
   {"stime": "2023-03", "activeNum": 10860, "avgActivePrice": 6.5, "cheatNum":1037, "cheatRate": 9.55, "normalNum": 9823, "statementCost": 63838.85, "totalRewardAmount":0},
   {"stime": "2023-03-29", "activeNum": 276, "avgActivePrice": 8.42, "cheatNum":77, "cheatRate": 27.9, "normalNum": 199, "statementCost": 1675.42, "totalRewardAmount":0},
   {"stime": "2023-03-30", "activeNum": 287, "avgActivePrice": 4.87, "cheatNum":67, "cheatRate": 23.34, "normalNum": 220, "statementCost": 1071.65, "totalRewardAmount":0},
-  {"stime": "2023-03-31", "activeNum": 301, "avgActivePrice": 4.23, "cheatNum":18, "cheatRate": 5.98, "normalNum": 108, "statementCost": 1197.07, "totalRewardAmount":0},
+  {"stime": "2023-03-31", "activeNum": 301, "avgActivePrice": 4.23, "cheatNum":18, "cheatRate": 5.98, "normalNum": 283, "statementCost": 1197.07, "totalRewardAmount":0},
 ];
 
 var detailDataMap = {};
