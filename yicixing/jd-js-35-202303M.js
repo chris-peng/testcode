@@ -11,8 +11,8 @@ function interceptintercept(content, resp){
             row.totalRewardAmount = 0;
             row.cheatNum = 1054;
             row.cheatRate = 9.47;
-            row.statementCost = 65908.55;
-            row.avgActivePrice = 6.54;
+            row.statementCost = 64489.54;
+            row.avgActivePrice = 6.4;
         }
       }
       console.log('json', json);
@@ -27,10 +27,10 @@ function interceptintercept(content, resp){
         row.normalNumPer = 470.39;
         row.cheatRate = 9.47;
         row.cheatRatePer = -56.12;
-        row.statementCost = 65908.55;
-        row.statementCostPer = 750.65;
-        row.avgActivePrice = 6.54;
-        row.avgActivePricePer = 48.97;
+        row.statementCost = 64489.54;
+        row.statementCostPer = 732.34;
+        row.avgActivePrice = 6.4;
+        row.avgActivePricePer = 45.79;
       console.log('json', json);
       return JSON.stringify(json);
     }
