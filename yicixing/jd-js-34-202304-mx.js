@@ -58,16 +58,16 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data;
         var row = data;
-        row.activeNum = 10860;
-        row.activeNumPer = 394.09;
-        row.normalNum = 9823;
-        row.normalNumPer = 470.39;
-        row.cheatRate = 9.55;
-        row.cheatRatePer = -56.12;
-        row.statementCost = 63838.85;
-        row.statementCostPer = 750.65;
-        row.avgActivePrice = 6.5;
-        row.avgActivePricePer = 48.97;
+        row.activeNum = 8707;
+        row.activeNumPer = 397.26;
+        row.normalNum = 7734;
+        row.normalNumPer = 405.16;
+        row.cheatRate = 11.17;
+        row.cheatRatePer = -11.07;
+        row.statementCost = 53583.68;
+        row.statementCostPer = 572.32;
+        row.avgActivePrice = 6.93;
+        row.avgActivePricePer = 33.01;
       console.log('json', json);
       return JSON.stringify(json);
     }
