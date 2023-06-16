@@ -1,6 +1,6 @@
 vvar detailData = [
   {"stime": "2023-05", "activeNum": 3744, "avgActivePrice": 4.22, "cheatNum":369, "cheatRate": 9.86, "normalNum": 3375, "statementCost": 14227.68, "totalRewardAmount":0},
-  {"stime": "2023-05-01", "activeNum": 128, "avgActivePrice": 2.39, "cheatNum":15, "cheatRate": 11.72, "normalNum": 113, "statementCost": 270.01, "totalRewardAmount":0},
+  {"stime": "2023-05-01", "activeNum": 143, "avgActivePrice": 5.83, "cheatNum":12, "cheatRate": 8.39, "normalNum": 131, "statementCost": 763.93, "totalRewardAmount":0},
   {"stime": "2023-05-02", "activeNum": 120, "avgActivePrice": 2.2, "cheatNum":11, "cheatRate": 9.17, "normalNum": 109, "statementCost": 219.67, "totalRewardAmount":0},
   {"stime": "2023-05-03", "activeNum": 134, "avgActivePrice": 2.54, "cheatNum":16, "cheatRate": 11.94, "normalNum": 118, "statementCost": 300.05, "totalRewardAmount":0},
   {"stime": "2023-05-04", "activeNum": 128, "avgActivePrice": 2.39, "cheatNum":15, "cheatRate": 11.72, "normalNum": 113, "statementCost": 270.01, "totalRewardAmount":0},
