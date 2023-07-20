@@ -43,7 +43,7 @@ function interceptintercept(content, resp){
         row.statementCost = 940.02;
         row.statementCostPer = -21.61;
         row.avgActivePrice = 2;
-        row.avgActivePricePer = 66.44;
+        row.avgActivePricePer = -66.44;
       console.log('json', json);
       return JSON.stringify(json);
     }
