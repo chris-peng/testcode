@@ -29,7 +29,7 @@ var detailData = [
   {"stime": "2023-06-27", "activeNum": 428, "avgActivePrice": 4.86, "cheatNum":45, "cheatRate": 10.51, "normalNum": 383, "statementCost": 1860.28, "totalRewardAmount":0},
   {"stime": "2023-06-28", "activeNum": 415, "avgActivePrice": 5.65, "cheatNum":36, "cheatRate": 8.67, "normalNum": 379, "statementCost": 2140.08, "totalRewardAmount":0},
   {"stime": "2023-06-29", "activeNum": 404, "avgActivePrice": 5.95, "cheatNum":42, "cheatRate": 10.4, "normalNum": 362, "statementCost": 2154.24, "totalRewardAmount":0},
-  {"stime": "2023-07-30", "activeNum": 427, "avgActivePrice": 6.97, "cheatNum":48, "cheatRate": 11.24, "normalNum": 379, "statementCost": 2642.27, "totalRewardAmount":0},
+  {"stime": "2023-07-30", "activeNum": 301, "avgActivePrice": 6.62, "cheatNum":1, "cheatRate": 0.33, "normalNum": 300, "statementCost": 1986.44, "totalRewardAmount":0},
   {"stime": "2023-06-30", "activeNum": 427, "avgActivePrice": 6.97, "cheatNum":48, "cheatRate": 11.24, "normalNum": 379, "statementCost": 2642.27, "totalRewardAmount":0},
 ];
 
