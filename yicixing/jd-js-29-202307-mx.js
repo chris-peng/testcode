@@ -1,5 +1,5 @@
 var detailData = [
-  {"stime": "2023-05", "activeNum": 4606, "avgActivePrice": 5.85, "cheatNum":1367, "cheatRate": 29.68, "normalNum": 3239, "statementCost": 18945.51, "totalRewardAmount":0},
+  {"stime": "2023-05", "activeNum": 2125, "avgActivePrice": 2.36, "cheatNum":254, "cheatRate": 11.95, "normalNum": 1871, "statementCost": 4414.61, "totalRewardAmount":0},
   {"stime": "2023-07-01", "activeNum": 62, "avgActivePrice": 5.6, "cheatNum":11, "cheatRate": 17.74, "normalNum": 51, "statementCost": 285.8, "totalRewardAmount":0},
   {"stime": "2023-07-02", "activeNum": 153, "avgActivePrice": 1.68, "cheatNum":12, "cheatRate": 7.84, "normalNum": 141, "statementCost": 236.8, "totalRewardAmount":0},
   {"stime": "2023-07-03", "activeNum": 129, "avgActivePrice": 3.55, "cheatNum":23, "cheatRate": 17.83, "normalNum": 106, "statementCost": 376.78, "totalRewardAmount":0},
@@ -41,16 +41,16 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data;
         var row = data;
-        row.activeNum = 4606;
-        row.activeNumPer = 74.87;
-        row.normalNum = 3239;
-        row.normalNumPer = 43.76;
-        row.cheatRate = 29.68;
-        row.cheatRatePer = 105.26;
-        row.statementCost = 18945.51;
-        row.statementCostPer = 98.36;
-        row.avgActivePrice = 5.85;
-        row.avgActivePricePer = 37.97;
+        row.activeNum = 2125;
+        row.activeNumPer = -64.58;
+        row.normalNum = 1871;
+        row.normalNumPer = -64.73;
+        row.cheatRate = 11.95;
+        row.cheatRatePer = 3.28;
+        row.statementCost = 4414.61;
+        row.statementCostPer = -83.84;
+        row.avgActivePrice = 2.36;
+        row.avgActivePricePer = -54.17;
       console.log('json', json);
       return JSON.stringify(json);
     }
