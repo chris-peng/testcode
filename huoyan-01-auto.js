@@ -92,6 +92,8 @@ function interceptintercept(json, resp){
         var normaAclIndex = 'netActivationNumber';
         var fakeAcIndex = 'cheatNumber';
         var fackPercentIndex = 'cheatPercent';
+        var effectOrderActiveNumIndex = 'effectOrderActiveNum';
+        var effectOrderActiveRateIndex = 'effectOrderActiveRate';
         var _overview = {
           "activeNum": 0,
           "normalNum": 0,
@@ -127,6 +129,7 @@ function interceptintercept(json, resp){
 
             row[activeIndex] = active;
             row[normaAclIndex] = normalAc;
+            row[effectOrderActiveRateIndex] = Math.round((row[effectOrderActiveNumIndex] / normalAc) * 10000) / 100;
             if(fakeAc != 0){
                 row[fackPercentIndex] = Math.round(fackPercent.toFixed(2) * 100) / 100;
             }
