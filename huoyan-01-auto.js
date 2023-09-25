@@ -129,7 +129,9 @@ function interceptintercept(json, resp){
 
             row[activeIndex] = active;
             row[normaAclIndex] = normalAc;
-            row[effectOrderActiveRateIndex] = Math.round((row[effectOrderActiveNumIndex] / normalAc) * 10000) / 100;
+            if(row[effectOrderActiveRateIndex]){
+              row[effectOrderActiveRateIndex] = Math.round((row[effectOrderActiveNumIndex] / normalAc) * 10000) / 100;
+            }
             if(fakeAc != 0){
                 row[fackPercentIndex] = Math.round(fackPercent.toFixed(2) * 100) / 100;
             }
@@ -153,6 +155,8 @@ function interceptintercept(json, resp){
         var normaAclIndex = 'normalNum';
         var fakeAcIndex = 'cheatNum';
         var fackPercentIndex = 'cheatRate';
+        var effectOrderActiveNumIndex = 'effectOrderActiveNum';
+        var effectOrderActiveRateIndex = 'effectOrderActiveRate';
         var _overview = {
           "activeNum": 0,
           "normalNum": 0,
@@ -190,6 +194,9 @@ function interceptintercept(json, resp){
 
             row[activeIndex] = active;
             row[normaAclIndex] = normalAc;
+            if(row[effectOrderActiveRateIndex]){
+              row[effectOrderActiveRateIndex] = Math.round((row[effectOrderActiveNumIndex] / normalAc) * 10000) / 100;
+            }
             if(fakeAc != 0){
                 row[fackPercentIndex] = Math.round(fackPercent.toFixed(2) * 100) / 100;
             }
