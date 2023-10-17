@@ -59,7 +59,7 @@ function interceptintercept(content, resp){
       var data = json.data;
         var row = data;
         row.activeNum = 14097;
-        row.activeNumPer = -10.14;
+        row.activeNumPer = 10.14;
         row.normalNum = 14019;
         row.normalNumPer = 10.26;
         row.cheatRate = 0.55;
