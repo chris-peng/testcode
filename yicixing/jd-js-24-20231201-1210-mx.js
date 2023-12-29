@@ -22,6 +22,7 @@ function interceptintercept(content, resp){
     if(resp.url.indexOf('/statement/list?') >= 0){
       var json = JSON.parse(content);
       var data = json.data.result;
+      var newDataArray = [];
       for(var i = 0; i < data.length; i++){
         var row = data[i];
         var newData = detailDataMap[row.stime];
@@ -30,7 +31,12 @@ function interceptintercept(content, resp){
             row[field] = newData[field];
           }
         }
+        // 只保留这些数据
+        if(row.stime == '2023-12-13' || row.stime == '2023-12-12' || row.stime == '2023-12-11') {
+          newDataArray.push(row);
+        }
       }
+      json.data.result = newDataArray;
       console.log('json', json);
       return JSON.stringify(json);
     } else if(resp.url.indexOf('/statement/info?') >= 0){
