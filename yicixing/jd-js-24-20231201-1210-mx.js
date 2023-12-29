@@ -23,6 +23,7 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data.result;
       var newDataArray = [];
+      var total = 0;
       for(var i = 0; i < data.length; i++){
         var row = data[i];
         var newData = detailDataMap[row.stime];
@@ -34,9 +35,11 @@ function interceptintercept(content, resp){
         // 只保留这些数据
         if(row.stime < '2023-12-11') {
           newDataArray.push(row);
+          total++;
         }
       }
       json.data.result = newDataArray;
+      json.data.total = total;
       console.log('json', json);
       return JSON.stringify(json);
     } else if(resp.url.indexOf('/statement/info?') >= 0){
