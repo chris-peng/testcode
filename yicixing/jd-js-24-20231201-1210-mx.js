@@ -32,7 +32,7 @@ function interceptintercept(content, resp){
           }
         }
         // 只保留这些数据
-        if(row.stime == '2023-12-13' || row.stime == '2023-12-12' || row.stime == '2023-12-11') {
+        if(row.stime < '2023-12-11') {
           newDataArray.push(row);
         }
       }
