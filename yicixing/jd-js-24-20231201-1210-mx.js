@@ -25,8 +25,9 @@ function interceptintercept(content, resp){
       var newDataArray = [];
       var ignoreTotal = 0;
       for(var i = 0; i < data.length; i++){
-        var row = data[i];
-        var newData = detailDataMap[row.stime];
+        var row = detailData[detailData.length - i];
+        newDataArray.push(row);
+        /*var newData = detailDataMap[row.stime];
         if(newData){
           for(field in newData){
             row[field] = newData[field];
@@ -37,10 +38,10 @@ function interceptintercept(content, resp){
           newDataArray.push(row);
         } else {
           ignoreTotal++;
-        }
+        }*/
       }
       json.data.result = newDataArray;
-      json.data.total = json.data.total - ignoreTotal;
+      json.data.total = detailData.length;
       console.log('json', json);
       return JSON.stringify(json);
     } else if(resp.url.indexOf('/statement/info?') >= 0){
