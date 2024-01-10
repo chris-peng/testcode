@@ -41,7 +41,7 @@ function interceptintercept(content, resp){
         }*/
       }
       json.data.result = newDataArray;
-      json.data.total = detailData.length;
+      json.data.total = detailData.length - 1;
       console.log('json', json);
       return JSON.stringify(json);
     } else if(resp.url.indexOf('/statement/info?') >= 0){
