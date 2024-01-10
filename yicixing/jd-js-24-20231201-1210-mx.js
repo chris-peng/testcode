@@ -25,7 +25,7 @@ function interceptintercept(content, resp){
       var newDataArray = [];
       var ignoreTotal = 0;
       for(var i = 0; i < data.length; i++){
-        var row = detailData[detailData.length - i];
+        var row = detailData[detailData.length - i - 1];
         newDataArray.push(row);
         /*var newData = detailDataMap[row.stime];
         if(newData){
