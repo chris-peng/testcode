@@ -1,26 +1,26 @@
 var detailData = [
-  {"stime": "2024-03", "activeNum": 11237, "avgActivePrice": 5.84, "cheatNum":25, "cheatRate": 0.22, "normalNum": 11212, "statementCost": 65470.74, "totalRewardAmount":0},
-  {"stime": "2024-03-01", "activeNum": 415, "avgActivePrice": 6.1, "cheatNum":1, "cheatRate": 0.24, "normalNum": 414, "statementCost": 2525.11, "totalRewardAmount":0},
-  {"stime": "2024-03-02", "activeNum": 454, "avgActivePrice": 5.44, "cheatNum":1, "cheatRate": 0.22, "normalNum": 453, "statementCost": 2464.29, "totalRewardAmount":0},
-  {"stime": "2024-03-03", "activeNum": 444, "avgActivePrice": 4.58, "cheatNum":0, "cheatRate": 0, "normalNum": 444, "statementCost": 2032.82, "totalRewardAmount":0},
-  {"stime": "2024-03-04", "activeNum": 290, "avgActivePrice": 7.46, "cheatNum":2, "cheatRate": 0.69, "normalNum": 288, "statementCost": 2149.07, "totalRewardAmount":0},
-  {"stime": "2024-03-05", "activeNum": 394, "avgActivePrice": 6.16, "cheatNum":0, "cheatRate": 0, "normalNum": 394, "statementCost": 2428.56, "totalRewardAmount":0},
-  {"stime": "2024-03-06", "activeNum": 480, "avgActivePrice": 6.59, "cheatNum":11, "cheatRate": 2.29, "normalNum": 469, "statementCost": 3088.74, "totalRewardAmount":0},
-  {"stime": "2024-03-07", "activeNum": 432, "avgActivePrice": 5.76, "cheatNum":0, "cheatRate": 0, "normalNum": 432, "statementCost": 2486.89, "totalRewardAmount":0},
-  {"stime": "2024-03-08", "activeNum": 453, "avgActivePrice": 7.2, "cheatNum":0, "cheatRate": 0, "normalNum": 453, "statementCost": 3260.81, "totalRewardAmount":0},
-  {"stime": "2024-03-09", "activeNum": 305, "avgActivePrice": 4.92, "cheatNum":0, "cheatRate": 0, "normalNum": 305, "statementCost": 1500.06, "totalRewardAmount":0},
-  {"stime": "2024-03-10", "activeNum": 308, "avgActivePrice": 4.66, "cheatNum":0, "cheatRate": 0, "normalNum": 308, "statementCost": 1435.68, "totalRewardAmount":0},
-  {"stime": "2024-03-11", "activeNum": 289, "avgActivePrice": 5.55, "cheatNum":0, "cheatRate": 0, "normalNum": 289, "statementCost": 1604.64, "totalRewardAmount":0},
-  {"stime": "2024-03-12", "activeNum": 284, "avgActivePrice": 5.58, "cheatNum":0, "cheatRate": 0, "normalNum": 284, "statementCost": 1585.32, "totalRewardAmount":0},
-  {"stime": "2024-03-13", "activeNum": 303, "avgActivePrice": 5.03, "cheatNum":1, "cheatRate": 0.33, "normalNum": 302, "statementCost": 1518.44, "totalRewardAmount":0},
-  {"stime": "2024-03-14", "activeNum": 258, "avgActivePrice": 10.29, "cheatNum":0, "cheatRate": 0, "normalNum": 258, "statementCost": 2654.71, "totalRewardAmount":0},
-  {"stime": "2024-03-15", "activeNum": 282, "avgActivePrice": 5.71, "cheatNum":0, "cheatRate": 0, "normalNum": 282, "statementCost": 1610.49, "totalRewardAmount":0},
-  {"stime": "2024-03-16", "activeNum": 279, "avgActivePrice": 7.2, "cheatNum":0, "cheatRate": 0, "normalNum": 279, "statementCost": 2008.63, "totalRewardAmount":0},
-  {"stime": "2024-03-17", "activeNum": 280, "avgActivePrice": 3.59, "cheatNum":1, "cheatRate": 0.36, "normalNum": 279, "statementCost": 1001.02, "totalRewardAmount":0},
-  {"stime": "2024-03-18", "activeNum": 318, "avgActivePrice": 3.94, "cheatNum":1, "cheatRate": 0.31, "normalNum": 317, "statementCost": 1249.4, "totalRewardAmount":0},
-  {"stime": "2024-03-19", "activeNum": 310, "avgActivePrice": 4.53, "cheatNum":1, "cheatRate": 0.32, "normalNum": 309, "statementCost": 1399.88, "totalRewardAmount":0},
-  {"stime": "2024-03-20", "activeNum": 281, "avgActivePrice": 5.5, "cheatNum":0, "cheatRate": 0, "normalNum": 281, "statementCost": 1544.92, "totalRewardAmount":0},
-  {"stime": "2024-03-21", "activeNum": 360, "avgActivePrice": 5.55, "cheatNum":2, "cheatRate": 0.56, "normalNum": 358, "statementCost": 1985.33, "totalRewardAmount":0},
+  {"stime": "2024-03", "activeNum": 2975, "avgActivePrice": 5.11, "cheatNum":124, "cheatRate": 4.17, "normalNum": 2851, "statementCost": 14572.14, "totalRewardAmount":0},
+  {"stime": "2024-03-01", "activeNum": 97, "avgActivePrice": 6.39, "cheatNum":3, "cheatRate": 3.09, "normalNum": 94, "statementCost": 601.11, "totalRewardAmount":0},
+  {"stime": "2024-03-02", "activeNum": 114, "avgActivePrice": 3.52, "cheatNum":4, "cheatRate": 3.51, "normalNum": 110, "statementCost": 387.29, "totalRewardAmount":0},
+  {"stime": "2024-03-03", "activeNum": 89, "avgActivePrice": 9.95, "cheatNum":2, "cheatRate": 2.25, "normalNum": 444, "statementCost": 865.82, "totalRewardAmount":0},
+  {"stime": "2024-03-04", "activeNum": 106, "avgActivePrice": 7.42, "cheatNum":5, "cheatRate": 4.72, "normalNum": 101, "statementCost": 749.32, "totalRewardAmount":0},
+  {"stime": "2024-03-05", "activeNum": 94, "avgActivePrice": 6.08, "cheatNum":5, "cheatRate": 5.32, "normalNum": 89, "statementCost": 541.24, "totalRewardAmount":0},
+  {"stime": "2024-03-06", "activeNum": 109, "avgActivePrice": 3.73, "cheatNum":3, "cheatRate": 2.75, "normalNum": 106, "statementCost": 395.26, "totalRewardAmount":0},
+  {"stime": "2024-03-07", "activeNum": 69, "avgActivePrice": 3.24, "cheatNum":2, "cheatRate": 2.9, "normalNum": 67, "statementCost": 217.07, "totalRewardAmount":0},
+  {"stime": "2024-03-08", "activeNum": 110, "avgActivePrice": 7.1, "cheatNum":5, "cheatRate": 4.55, "normalNum": 105, "statementCost": 745.96, "totalRewardAmount":0},
+  {"stime": "2024-03-09", "activeNum": 88, "avgActivePrice": 5.98, "cheatNum":2, "cheatRate": 2.27, "normalNum": 86, "statementCost": 514.05, "totalRewardAmount":0},
+  {"stime": "2024-03-10", "activeNum": 114, "avgActivePrice": 8.68, "cheatNum":4, "cheatRate": 3.51, "normalNum": 110, "statementCost": 954.85, "totalRewardAmount":0},
+  {"stime": "2024-03-11", "activeNum": 70, "avgActivePrice": 9.15, "cheatNum":1, "cheatRate": 1.43, "normalNum": 69, "statementCost": 631.65, "totalRewardAmount":0},
+  {"stime": "2024-03-12", "activeNum": 92, "avgActivePrice": 6.97, "cheatNum":3, "cheatRate": 3.26, "normalNum": 89, "statementCost": 620.18, "totalRewardAmount":0},
+  {"stime": "2024-03-13", "activeNum": 85, "avgActivePrice": 9.08, "cheatNum":2, "cheatRate": 2.35, "normalNum": 83, "statementCost": 753.3, "totalRewardAmount":0},
+  {"stime": "2024-03-14", "activeNum": 99, "avgActivePrice": 3.93, "cheatNum":1, "cheatRate": 1.01, "normalNum": 98, "statementCost": 385, "totalRewardAmount":0},
+  {"stime": "2024-03-15", "activeNum": 89, "avgActivePrice": 11.78, "cheatNum":3, "cheatRate": 3.37, "normalNum": 86, "statementCost": 1013.27, "totalRewardAmount":0},
+  {"stime": "2024-03-16", "activeNum": 99, "avgActivePrice": 5.44, "cheatNum":3, "cheatRate": 3.03, "normalNum": 96, "statementCost": 522.01, "totalRewardAmount":0},
+  {"stime": "2024-03-17", "activeNum": 108, "avgActivePrice": 3.13, "cheatNum":5, "cheatRate": 4.63, "normalNum": 103, "statementCost": 321.98, "totalRewardAmount":0},
+  {"stime": "2024-03-18", "activeNum": 85, "avgActivePrice": 0.41, "cheatNum":1, "cheatRate": 1.18, "normalNum": 84, "statementCost": 34.85, "totalRewardAmount":0},
+  {"stime": "2024-03-19", "activeNum": 114, "avgActivePrice": 3.83, "cheatNum":1, "cheatRate": 0.88, "normalNum": 113, "statementCost": 433.34, "totalRewardAmount":0},
+  {"stime": "2024-03-20", "activeNum": 72, "avgActivePrice": 2.13, "cheatNum":1, "cheatRate": 1.39, "normalNum": 71, "statementCost": 151.12, "totalRewardAmount":0},
+  {"stime": "2024-03-21", "activeNum": 136, "avgActivePrice": 3.33, "cheatNum":41, "cheatRate": 30.15, "normalNum": 95, "statementCost": 316.63, "totalRewardAmount":0},
   {"stime": "2024-03-22", "activeNum": 81, "avgActivePrice": 8.7, "cheatNum":5, "cheatRate": 6.17, "normalNum": 76, "statementCost":661.16, "totalRewardAmount":0},
   {"stime": "2024-03-23", "activeNum": 140, "avgActivePrice": 3.96, "cheatNum":1, "cheatRate": 0.71, "normalNum": 139, "statementCost": 550.32, "totalRewardAmount":0},
   {"stime": "2024-03-24", "activeNum": 116, "avgActivePrice": 4.51, "cheatNum":4, "cheatRate": 3.45, "normalNum": 112, "statementCost": 505.17, "totalRewardAmount":0},
@@ -59,16 +59,16 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data;
         var row = data;
-        row.activeNum = 11237;
-        row.activeNumPer = 29.71;
-        row.normalNum = 11212;
-        row.normalNumPer = 29.51;
-        row.cheatRate = 0.22;
-        row.cheatRatePer = 221.22;
-        row.statementCost = 65470.74;
-        row.statementCostPer = 15.14;
-        row.avgActivePrice = 5.84;
-        row.avgActivePricePer = -11.11;
+        row.activeNum = 2975;
+        row.activeNumPer = 0.24;
+        row.normalNum = 2851;
+        row.normalNumPer = 1.68;
+        row.cheatRate = 4.17;
+        row.cheatRatePer = -24.57;
+        row.statementCost = 14572.14;
+        row.statementCostPer = -9.19;
+        row.avgActivePrice = 5.11;
+        row.avgActivePricePer = -10.71;
       console.log('json', json);
       return JSON.stringify(json);
     }
