@@ -24,7 +24,7 @@ var detailData = [
   {"stime": "2024-03-22", "activeNum": 230, "avgActivePrice": 3.68, "cheatNum":1, "cheatRate": 0.43, "normalNum": 229, "statementCost": 842.86, "totalRewardAmount":0},
   {"stime": "2024-03-23", "activeNum": 371, "avgActivePrice": 6.18, "cheatNum":0, "cheatRate": 0, "normalNum": 371, "statementCost": 2292.71, "totalRewardAmount":0},
   {"stime": "2024-03-24", "activeNum": 400, "avgActivePrice": 6.36, "cheatNum":0, "cheatRate": 0, "normalNum": 400, "statementCost": 2543.94, "totalRewardAmount":0},
-  {"stime": "2024-03-25", "activeNum": 391, "avgActivePrice": 4.93, "cheatNum":2, "cheatRate": 0.48, "normalNum": 391, "statementCost": 1926.2, "totalRewardAmount":0},
+  {"stime": "2024-03-25", "activeNum": 391, "avgActivePrice": 4.93, "cheatNum":0, "cheatRate": 0, "normalNum": 391, "statementCost": 1926.2, "totalRewardAmount":0},
   {"stime": "2024-03-26", "activeNum": 403, "avgActivePrice": 6.34, "cheatNum":1, "cheatRate": 0.25, "normalNum": 402, "statementCost": 2546.94, "totalRewardAmount":0},
   {"stime": "2024-03-27", "activeNum": 412, "avgActivePrice": 5.72, "cheatNum":0, "cheatRate": 0, "normalNum": 412, "statementCost": 2357.41, "totalRewardAmount":0},
   {"stime": "2024-03-28", "activeNum": 439, "avgActivePrice": 7.26, "cheatNum":0, "cheatRate": 0, "normalNum": 439, "statementCost": 3186.6, "totalRewardAmount":0},
