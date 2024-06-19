@@ -1,5 +1,6 @@
 var detailData = [
   {"channelPackageName": "lechuang_android_lechuang12","month": "2024-05","newUserNum": 2649,"cheatUserNum": 1050,"payUserNum": 1599,"price": 18.15,"amount": 29027.3},
+  {"channelPackageName": "lechuang_android_lechuang10","month": "2024-05","newUserNum": 2749,"cheatUserNum": 1125,"payUserNum": 1624,"price": 9.4,"amount": 15268.8},
 ];
 
 var detailDataMap = {};
