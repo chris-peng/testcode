@@ -1,8 +1,10 @@
 var detailData = [
-  {"channelPackageName": "lechuang_android_lechuang12","month": "2024-06","newUserNum": 2381,"cheatUserNum": 1078,"payUserNum": 1303,"price": 16.21,"amount": 21116.6},
-  {"channelPackageName": "lechuang_android_lechuang10","month": "2024-06","newUserNum": 1636,"cheatUserNum": 532,"payUserNum": 1104,"price": 14.31,"amount": 15796.7},
-  {"channelPackageName": "lechuang_android_lechuang07","month": "2024-06","newUserNum": 2340,"cheatUserNum": 760,"payUserNum": 1580,"price": 15.25,"amount": 24092.8},
-  {"channelPackageName": "lechuang_android_lechuang05","month": "2024-06","newUserNum": 2257,"cheatUserNum": 723,"payUserNum": 1534,"price": 12.81,"amount": 19657.7},
+  {"channelPackageName": "lechuang_android_lechuang16","month": "2024-07","newUserNum": 95,"cheatUserNum": 34,"payUserNum": 61,"price": 10.48,"amount": 639},
+  {"channelPackageName": "lechuang_android_lechuang14","month": "2024-07","newUserNum": 311,"cheatUserNum": 91,"payUserNum": 220,"price": 13.87,"amount": 3050.5}
+  {"channelPackageName": "lechuang_android_lechuang11","month": "2024-07","newUserNum": 10469,"cheatUserNum": 3087,"payUserNum": 7382,"price": 15.18,"amount": 112086.6},
+  {"channelPackageName": "lechuang_android_lechuang07","month": "2024-07","newUserNum": 37,"cheatUserNum": 9,"payUserNum": 28,"price": 10.38,"amount": 291.7},
+  {"channelPackageName": "lechuang_android_lechuang05","month": "2024-07","newUserNum": 49,"cheatUserNum": 3,"payUserNum": 46,"price": 24,"amount": 1104},
+  {"channelPackageName": "lechuang_android_lechuang04","month": "2024-07","newUserNum": 35,"cheatUserNum": 2,"payUserNum": 33,"price": 24,"amount": 792},
   {"channelPackageName": "lechuang_android_lechuang03","month": "2024-06","newUserNum": 2333,"cheatUserNum": 740,"payUserNum": 1593,"price": 16.21,"amount": 25815.9},
   {"channelPackageName": "lechuang_android_lechuang02","month": "2024-06","newUserNum": 3556,"cheatUserNum": 1136,"payUserNum": 2420,"price": 12.17,"amount": 29454.5},
   {"channelPackageName": "lechuang_android_lechuang01","month": "2024-06","newUserNum": 2632,"cheatUserNum": 1192,"payUserNum": 1440,"price": 13.05,"amount": 18795.6},
