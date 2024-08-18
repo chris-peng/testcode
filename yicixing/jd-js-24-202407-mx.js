@@ -1,6 +1,6 @@
 var detailData = [
-  {"stime": "2024-07", "activeNum": 2975, "avgActivePrice": 5.11, "cheatNum":124, "cheatRate": 4.17, "normalNum": 2851, "statementCost": 14572.14, "totalRewardAmount":0},
-  {"stime": "2024-03-01", "activeNum": 97, "avgActivePrice": 6.39, "cheatNum":3, "cheatRate": 3.09, "normalNum": 94, "statementCost": 601.11, "totalRewardAmount":0},
+  {"stime": "2024-07", "activeNum": 9144, "avgActivePrice": 4.89, "cheatNum":20, "cheatRate": 0.22, "normalNum": 9124, "statementCost": 44651.5, "totalRewardAmount":0},
+  {"stime": "2024-07-01", "activeNum": 39, "avgActivePrice": 0.83, "cheatNum":0, "cheatRate": 0, "normalNum": 39, "statementCost": 32.19, "totalRewardAmount":0},
   {"stime": "2024-07-02", "activeNum": 630, "avgActivePrice": 3.71, "cheatNum":0, "cheatRate": 0, "normalNum": 630, "statementCost": 2334.72, "totalRewardAmount":0},
   {"stime": "2024-07-03", "activeNum": 432, "avgActivePrice": 4.15, "cheatNum":0, "cheatRate": 0, "normalNum": 432, "statementCost": 1791.99, "totalRewardAmount":0},
   {"stime": "2024-07-04", "activeNum": 364, "avgActivePrice": 2.8, "cheatNum":2, "cheatRate": 0.55, "normalNum": 362, "statementCost": 1013.87, "totalRewardAmount":0},
@@ -59,16 +59,16 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data;
         var row = data;
-        row.activeNum = 2975;
-        row.activeNumPer = 0.24;
-        row.normalNum = 2851;
-        row.normalNumPer = 1.68;
-        row.cheatRate = 4.17;
-        row.cheatRatePer = -24.57;
-        row.statementCost = 14572.14;
-        row.statementCostPer = -9.19;
-        row.avgActivePrice = 5.11;
-        row.avgActivePricePer = -10.71;
+        row.activeNum = 9144;
+        row.activeNumPer = 85.1;
+        row.normalNum = 9124;
+        row.normalNumPer = 85.11;
+        row.cheatRate = 0.22;
+        row.cheatRatePer = -1.77;
+        row.statementCost = 44651.5;
+        row.statementCostPer = 22.6;
+        row.avgActivePrice = 4.89;
+        row.avgActivePricePer = -33.83;
       console.log('json', json);
       return JSON.stringify(json);
     }
