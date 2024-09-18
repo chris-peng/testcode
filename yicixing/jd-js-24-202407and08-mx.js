@@ -92,15 +92,15 @@ function interceptintercept(content, resp){
       var data = json.data;
         var row = data;
         row.activeNum = 14168;
-        row.activeNumPer = --;
+        row.activeNumPer = '--';
         row.normalNum = 14122;
-        row.normalNumPer = --;
+        row.normalNumPer = '--';
         row.cheatRate = 0.32;
-        row.cheatRatePer = --;
+        row.cheatRatePer = '--';
         row.statementCost = 79894.27;
-        row.statementCostPer = --;
+        row.statementCostPer = '--';
         row.avgActivePrice = 5.66;
-        row.avgActivePricePer = --;
+        row.avgActivePricePer = '--';
       console.log('json', json);
       return JSON.stringify(json);
     }
