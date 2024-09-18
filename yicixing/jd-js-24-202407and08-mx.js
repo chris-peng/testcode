@@ -91,16 +91,16 @@ function interceptintercept(content, resp){
       var json = JSON.parse(content);
       var data = json.data;
         var row = data;
-        row.activeNum = 5024;
-        row.activeNumPer = -45.06;
-        row.normalNum = 4998;
-        row.normalNumPer = -45.22;
-        row.cheatRate = 0.52;
-        row.cheatRatePer = 136.61;
-        row.statementCost = 35242.77;
-        row.statementCostPer = -21.07;
-        row.avgActivePrice = 7.05;
-        row.avgActivePricePer = 44.17;
+        row.activeNum = 14168;
+        row.activeNumPer = --;
+        row.normalNum = 14122;
+        row.normalNumPer = --;
+        row.cheatRate = 0.32;
+        row.cheatRatePer = --;
+        row.statementCost = 79894.27;
+        row.statementCostPer = --;
+        row.avgActivePrice = 5.66;
+        row.avgActivePricePer = --;
       console.log('json', json);
       return JSON.stringify(json);
     }
