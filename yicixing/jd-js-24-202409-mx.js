@@ -64,8 +64,8 @@ function interceptintercept(content, resp){
         row.normalNumPer = -50.34;
         row.cheatRate = 0.16;
         row.cheatRatePer = -68.91;
-        row.statementCost = 21978.41;
-        row.statementCostPer = -40.76;
+        row.statementCost = 20659.71;
+        row.statementCostPer = -41.38;
         row.avgActivePrice = 8.32;
         row.avgActivePricePer = 18.01;
       console.log('json', json);
