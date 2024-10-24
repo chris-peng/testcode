@@ -1,4 +1,5 @@
 var detailData = [
+  {"channelPackageName": "lechuang_android_lechuang16","month": "2024-09","newUserNum": 445,"cheatUserNum": 100,"payUserNum": 345,"price": 12.43,"amount": 4288.85},
   {"channelPackageName": "lechuang_android_lechuang15","month": "2024-09","newUserNum": 35489,"cheatUserNum": 9304,"payUserNum": 26185,"price": 11.03,"amount": 288854},
   {"channelPackageName": "lechuang_android_lechuang14","month": "2024-08","newUserNum": 911,"cheatUserNum": 131,"payUserNum": 780,"price": 19.1,"amount": 14899.1},
   {"channelPackageName": "lechuang_android_lechuang09","month": "2024-08","newUserNum": 587,"cheatUserNum": 189,"payUserNum": 398,"price": 12.93,"amount": 5146.7},
