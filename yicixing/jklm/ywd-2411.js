@@ -1,6 +1,6 @@
 var detailData = [
   {"channelPackageName": "lechuang_android_lechuang17","month": "2024-11","newUserNum": 751,"cheatUserNum": 121,"payUserNum": 630,"price": 9.39,"amount": 5915.7},
-  {"channelPackageName": "lechuang_android_lechuang16","month": "2024-11","newUserNum": 1142,"cheatUserNum": 345,"payUserNum": 797,"price": 7.72,"amount": 6152.84},
+  {"channelPackageName": "lechuang_android_lechuang16","month": "2024-11","newUserNum": 1142,"cheatUserNum": 345,"payUserNum": 797,"price": 7.72,"amount": 6152.8},
   {"channelPackageName": "lechuang_android_lechuang15","month": "2024-11","newUserNum": 11517,"cheatUserNum": 3397,"payUserNum": 8120,"price": 8.16,"amount": 66259.2},
   {"channelPackageName": "lechuang_android_lechuang13","month": "2024-11","newUserNum": 1110,"cheatUserNum": 288,"payUserNum": 822,"price": 9.48,"amount": 7792.6},
   {"channelPackageName": "lechuang_android_lechuang12","month": "2024-11","newUserNum": 5533,"cheatUserNum": 848,"payUserNum": 4685,"price": 9.65,"amount": 45210.3},
