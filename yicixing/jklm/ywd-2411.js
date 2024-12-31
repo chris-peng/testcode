@@ -1,9 +1,9 @@
 var detailData = [
-  {"channelPackageName": "lechuang_android_lechuang17","month": "2024-11","newUserNum": 751,"cheatUserNum": 121,"payUserNum": 630,"price": 9.39,"amount": 5915.7},
+  {"channelPackageName": "lechuang_android_lechuang17","month": "2024-11","newUserNum": 751,"cheatUserNum": 121,"payUserNum": 630,"price": 9.39,"amount": 5912.7},
   {"channelPackageName": "lechuang_android_lechuang16","month": "2024-11","newUserNum": 1142,"cheatUserNum": 345,"payUserNum": 797,"price": 7.72,"amount": 6152.8},
-  {"channelPackageName": "lechuang_android_lechuang15","month": "2024-11","newUserNum": 11517,"cheatUserNum": 3397,"payUserNum": 8120,"price": 8.16,"amount": 66259.2},
+  {"channelPackageName": "lechuang_android_lechuang15","month": "2024-11","newUserNum": 11517,"cheatUserNum": 3397,"payUserNum": 8120,"price": 8.16,"amount": 66261.5},
   {"channelPackageName": "lechuang_android_lechuang13","month": "2024-11","newUserNum": 1110,"cheatUserNum": 288,"payUserNum": 822,"price": 9.48,"amount": 7792.6},
-  {"channelPackageName": "lechuang_android_lechuang12","month": "2024-11","newUserNum": 5533,"cheatUserNum": 848,"payUserNum": 4685,"price": 9.65,"amount": 45210.3},
+  {"channelPackageName": "lechuang_android_lechuang12","month": "2024-11","newUserNum": 5533,"cheatUserNum": 848,"payUserNum": 4685,"price": 9.15,"amount": 42858.3},
   {"channelPackageName": "lechuang_android_lechuang11","month": "2024-11","newUserNum": 3119,"cheatUserNum": 533,"payUserNum": 2586,"price": 12.57,"amount": 32506},
   {"channelPackageName": "lechuang_android_lechuang08","month": "2024-11","newUserNum": 9545,"cheatUserNum": 2077,"payUserNum": 7468,"price": 7.67,"amount": 57279.6},
   {"channelPackageName": "lechuang_android_lechuang07","month": "2024-11","newUserNum": 1054,"cheatUserNum": 190,"payUserNum": 864,"price": 9.83,"amount": 8493.1},
