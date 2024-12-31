@@ -7,7 +7,7 @@ var detailData = [
   {"channelPackageName": "lechuang_android_lechuang11","month": "2024-11","newUserNum": 3119,"cheatUserNum": 533,"payUserNum": 2586,"price": 12.57,"amount": 32506},
   {"channelPackageName": "lechuang_android_lechuang08","month": "2024-11","newUserNum": 9545,"cheatUserNum": 2077,"payUserNum": 7468,"price": 7.67,"amount": 57279.6},
   {"channelPackageName": "lechuang_android_lechuang07","month": "2024-11","newUserNum": 1054,"cheatUserNum": 190,"payUserNum": 864,"price": 9.83,"amount": 8493.1},
-  {"channelPackageName": "lechuang_android_lechuang06","month": "2024-11","newUserNum": 942,"cheatUserNum": 145,"payUserNum": 797,"price": 9.59,"amount": 7643.2},
+  {"channelPackageName": "lechuang_android_lechuang06","month": "2024-11","newUserNum": 899,"cheatUserNum": 145,"payUserNum": 754,"price": 9.59,"amount": 7230.6},
   {"channelPackageName": "jr7983","month": "2024-11","newUserNum": 111,"cheatUserNum": 25,"payUserNum": 86,"price": 10.78,"amount": 927.1},
 ];
 
