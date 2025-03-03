@@ -1,11 +1,9 @@
 var detailData = [
-  {"channelPackageName": "lechuang_android_lechuang15","day": "2025-03-01","users0": 963,"cheatUsers": 301,"cheatUserRatio":0.05,"users": 662,"price": 7.74,"amount": 5121.9},
-  {"channelPackageName": "lechuang_android_lechuang15","day": "2025-03-02","users0": 382,"cheatUsers": 21,"cheatUserRatio":0.05,"users": 361,"price": 16.22,"amount": 5855},
-  {"channelPackageName": "lechuang_android_lechuang08","day": "2025-03-03","users0": 715,"cheatUsers": 119,"cheatUserRatio":0.05,"users": 596,"price": 9.15,"amount": 5452},
-  {"channelPackageName": "lechuang_android_lechuang08","day": "2025-03-04","users0": 738,"cheatUsers": 60,"cheatUserRatio":0.05,"users": 678,"price": 10.1,"amount": 6849},
-  {"channelPackageName": "lechuang_android_lechuang08","day": "2025-03-05","users0": 7223,"cheatUsers": 969,"cheatUserRatio":0.05,"users": 6254,"price": 8.69,"amount": 54362},
-  {"channelPackageName": "lechuang_android_lechuang08","day": "2025-03-06","users0": 728,"cheatUsers": 136,"cheatUserRatio":0.05,"users": 592,"price": 8.84,"amount": 5234},
-  {"channelPackageName": "lechuang_android_lechuang08","day": "2025-03-07","users0": 645,"cheatUsers": 104,"cheatUserRatio":0.05,"users": 541,"price": 7.5,"amount": 4056},
+  {"channelPackageName": "lechuang_android_lechuang15","day": "2025-02-25","users0": 78,"cheatUsers": 13,"cheatUserRatio":0.17,"users": 65,"price": 13.22,"amount": 859.3},
+  {"channelPackageName": "lechuang_android_lechuang15","day": "2025-02-26","users0": 113,"cheatUsers": 3,"cheatUserRatio":0.03,"users": 110,"price": 6,"amount": 660},
+  {"channelPackageName": "lechuang_android_lechuang15","day": "2025-02-27","users0": 144,"cheatUsers": 20,"cheatUserRatio":0.14,"users": 124,"price": 13.58,"amount": 1683.92},
+  {"channelPackageName": "lechuang_android_lechuang15","day": "2025-02-28","users0": 122,"cheatUsers": 67,"cheatUserRatio":0.55,"users": 55,"price": 6,"amount": 330},
+  {"channelPackageName": "lechuang_android_lechuang15","day": "2025-03-01","users0": 181,"cheatUsers": 8,"cheatUserRatio":0.04,"users": 173,"price": 6.19,"amount": 1070.87},
 ];
 
 var detailDataMap = {};
