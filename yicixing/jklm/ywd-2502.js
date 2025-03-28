@@ -1,11 +1,11 @@
 var detailData = [
-  {"channelPackageName": "lechuang_android_lechuang15","month": "2025-01","newUserNum": 963,"cheatUserNum": 301,"payUserNum": 662,"price": 7.74,"amount": 5121},
-  {"channelPackageName": "lechuang_android_lechuang12","month": "2025-01","newUserNum": 382,"cheatUserNum": 21,"payUserNum": 361,"price": 16.22,"amount": 5855},
-  {"channelPackageName": "lechuang_android_lechuang10","month": "2025-01","newUserNum": 715,"cheatUserNum": 119,"payUserNum": 596,"price": 9.15,"amount": 5452},
-  {"channelPackageName": "lechuang_android_lechuang09","month": "2025-01","newUserNum": 738,"cheatUserNum": 60,"payUserNum": 678,"price": 10.1,"amount": 6849},
-  {"channelPackageName": "lechuang_android_lechuang08","month": "2025-01","newUserNum": 7223,"cheatUserNum": 969,"payUserNum": 6254,"price": 8.69,"amount": 54362},
-  {"channelPackageName": "lechuang_android_lechuang07","month": "2025-01","newUserNum": 728,"cheatUserNum": 136,"payUserNum": 592,"price": 8.84,"amount": 5234},
-  {"channelPackageName": "lechuang_android_lechuang05","month": "2025-01","newUserNum": 645,"cheatUserNum": 104,"payUserNum": 541,"price": 7.5,"amount": 4056},
+  {"channelPackageName": "lechuang_android_lechuang16","month": "2025-02","newUserNum": 553,"cheatUserNum": 65,"payUserNum": 488,"price": 8.08,"amount": 3943},
+  {"channelPackageName": "lechuang_android_lechuang15","month": "2025-02","newUserNum": 978,"cheatUserNum": 96,"payUserNum": 882,"price": 7.58,"amount": 6688},
+  {"channelPackageName": "lechuang_android_lechuang13","month": "2025-02","newUserNum": 585,"cheatUserNum": 57,"payUserNum": 528,"price": 12.38,"amount": 6535},
+  {"channelPackageName": "lechuang_android_lechuang10","month": "2025-02","newUserNum": 572,"cheatUserNum": 43,"payUserNum": 529,"price": 10.08,"amount": 5330},
+  {"channelPackageName": "lechuang_android_lechuang09","month": "2025-02","newUserNum": 584,"cheatUserNum": 28,"payUserNum": 556,"price": 9.53,"amount": 5301},
+  {"channelPackageName": "lechuang_android_lechuang08","month": "2025-02","newUserNum": 6386,"cheatUserNum": 469,"payUserNum": 5917,"price": 6.77,"amount": 40082},
+  {"channelPackageName": "lechuang_android_lechuang07","month": "2025-02","newUserNum": 580,"cheatUserNum": 52,"payUserNum": 528,"price": 9.13,"amount": 4820},
 ];
 
 var detailDataMap = {};
