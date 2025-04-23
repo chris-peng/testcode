@@ -51,6 +51,7 @@ var detailData = [
   {"channelPackageName": "lechuang_android_lechuang08","day": "2025-04-18","users0": 251,"cheatUsers": 15,"cheatUserRatio":0.06,"users": 236,"price": 7.09,"amount": 1673.24},
   {"channelPackageName": "lechuang_android_lechuang08","day": "2025-04-19","users0": 213,"cheatUsers": 11,"cheatUserRatio":0.05,"users": 202,"price": 6,"amount": 1212},
   {"channelPackageName": "lechuang_android_lechuang08","day": "2025-04-20","users0": 262,"cheatUsers": 139,"cheatUserRatio":0.53,"users": 123,"price": 6,"amount": 738},
+  {"channelPackageName": "lechuang_android_lechuang08","day": "2025-04-21","users0": 201,"cheatUsers": 12,"cheatUserRatio":0.06,"users": 189,"price": 6.12,"amount": 1156.68},
 ];
 
 var detailDataMap = {};
