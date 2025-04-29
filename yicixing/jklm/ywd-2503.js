@@ -1,11 +1,11 @@
 var detailData = [
-  {"channelPackageName": "lechuang_android_lechuang16","month": "2025-03","newUserNum": 553,"cheatUserNum": 65,"payUserNum": 488,"price": 8.08,"amount": 3943},
+  {"channelPackageName": "lechuang_android_lechuang16","month": "2025-03","newUserNum": 732,"cheatUserNum": 59,"payUserNum": 673,"price": 6.52,"amount": 4386.9},
   {"channelPackageName": "lechuang_android_lechuang15","month": "2025-03","newUserNum": 3255,"cheatUserNum": 415,"payUserNum": 2840,"price": 6.53,"amount": 18545.2},
-  {"channelPackageName": "lechuang_android_lechuang13","month": "2025-03","newUserNum": 585,"cheatUserNum": 57,"payUserNum": 528,"price": 12.38,"amount": 6535},
-  {"channelPackageName": "lechuang_android_lechuang10","month": "2025-03","newUserNum": 572,"cheatUserNum": 43,"payUserNum": 529,"price": 10.08,"amount": 5330},
-  {"channelPackageName": "lechuang_android_lechuang09","month": "2025-03","newUserNum": 584,"cheatUserNum": 28,"payUserNum": 556,"price": 9.53,"amount": 5301},
-  {"channelPackageName": "lechuang_android_lechuang08","month": "2025-03","newUserNum": 5380,"cheatUserNum": 311,"payUserNum": 5069,"price": 6.14,"amount": 31123.66},
-  {"channelPackageName": "lechuang_android_lechuang07","month": "2025-03","newUserNum": 580,"cheatUserNum": 52,"payUserNum": 528,"price": 9.13,"amount": 4820},
+  {"channelPackageName": "lechuang_android_lechuang13","month": "2025-03","newUserNum": 796,"cheatUserNum": 62,"payUserNum": 734,"price": 7.14,"amount": 5242.6},
+  {"channelPackageName": "lechuang_android_lechuang10","month": "2025-03","newUserNum": 762,"cheatUserNum": 69,"payUserNum": 693,"price": 7.88,"amount": 5460},
+  {"channelPackageName": "lechuang_android_lechuang09","month": "2025-03","newUserNum": 793,"cheatUserNum": 74,"payUserNum": 719,"price": 6,"amount": 4314},
+  {"channelPackageName": "lechuang_android_lechuang08","month": "2025-03","newUserNum": 5380,"cheatUserNum": 311,"payUserNum": 5069,"price": 6.14,"amount": 31123.7},
+  {"channelPackageName": "lechuang_android_lechuang07","month": "2025-03","newUserNum": 790,"cheatUserNum": 49,"payUserNum": 741,"price": 8.56,"amount": 6339.8},
 ];
 
 var detailDataMap = {};
