@@ -13,6 +13,9 @@ var detailData = [
   {"channelPackageName": "lechuang_android_lechuang12","day": "2025-05-05","users0": 206,"cheatUsers": 25,"cheatUserRatio":0.12,"users": 181,"price": 11.64,"amount": 2106.84},
   {"channelPackageName": "lechuang_android_lechuang12","day": "2025-05-06","users0": 185,"cheatUsers": 26,"cheatUserRatio":0.14,"users": 159,"price": 12.31,"amount": 1957.29},
   {"channelPackageName": "lechuang_android_lechuang12","day": "2025-05-07","users0": 168,"cheatUsers": 20,"cheatUserRatio":0.12,"users": 148,"price": 18.09,"amount": 2677.32},
+  {"channelPackageName": "lechuang_android_lechuang12","day": "2025-05-08","users0": 152,"cheatUsers": 20,"cheatUserRatio":0.13,"users": 132,"price": 8.7,"amount": 1148.4},
+  {"channelPackageName": "lechuang_android_lechuang12","day": "2025-05-09","users0": 127,"cheatUsers": 15,"cheatUserRatio":0.12,"users": 112,"price": 14.49,"amount": 1622.88},
+  {"channelPackageName": "lechuang_android_lechuang12","day": "2025-05-10","users0": 120,"cheatUsers": 4,"cheatUserRatio":0.03,"users": 116,"price": 6.92,"amount": 802.72},
 ];
 
 var detailDataMap = {};
